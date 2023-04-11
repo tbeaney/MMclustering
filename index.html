@@ -14,7 +14,7 @@
 		<h1 style="text-align: center; font-size: 50px; margin: 0px; padding-top: 2%; background-color: white; ">Characterising clusters of multimorbidity</h1>
 		<h3 style="text-align: center; margin: 0px; padding-bottom: 2%; padding-top: 2%; background-color: white; ">
 			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href="index.html">Home</a>
-			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href=#resources>Resources</a>
+			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href=#inprogress>Work in Progress</a>
 	</header>
 	<p style="text-align:center; padding-top:2%;margin:0px;"><img src="images/MEDCODE_CLUSTERS.jpg" alt="Disease clusters" style="width:600px;" /></p>
 	<h4 style="text-align:center;margin: 0px;">Author: Thomas Beaney</h4>
@@ -80,8 +80,12 @@
 			There were also changes to the codes included for diabetes, with removal of codes indicating a specific Type 1 or Type 2 diagnosis from the 'Other/unspecified' diabetes category.
 		</p>
 
+		<p>
+			Link to download: [TBC]
+		</p>
 
-		<h3>Developing lists of known disease associations</h3>
+
+		<h3>Developing list of well-established disease associations</h3>
 		<p>
 			In order to interpet disease clusters, we developed a set of 253 established disease association pairs.
 			The aim here is to provide a list of conditions which are clinically well-established to be associated with another, rather than an attempt to provide a comprehensive list of all possible associations.
@@ -91,6 +95,7 @@
 		</p>
 
 		<p>
+			Link to download:
 			<a href="resources/DISEASE_ASSOCIATION_PAIRS.csv" download="DISEASE_ASSOCIATION_PAIRS.csv">DISEASE_ASSOCIATION_PAIRS.csv</a>
 		</p>
 
@@ -112,7 +117,22 @@
 
 		<h3>Defining clusters of diseases</h3>
 		<p>
-			Disease clusters were created
+			Disease clusters were created using a three-step process.
+			Firstly, vector representations ("disease embeddings") were created using a) MCA and b) NLP methods (<i>Word2vec</i> and <i>GloVe</i>)
+			Secondly, similarity of each disease to each other disease was determined by calculating the cosine similarity, creating a 212 by 212 matrix.
+			Thirdly, we clustered diseases based on their cosine similarity.
+			We adopted a graph-based clustering algorithm, Markov Multiscale Community Detection (MMCD), available on <a href="https://github.com/barahona-research-group/PyGenStability">GitHub</a>.
+		</p>
+
+		<p>
+			We created word cloud representations of the diseases, available for both MCA and Word2vec models below:
+
+		<p>
+			<a href="mca_clusters.html">MCA clusters</a>
+		</p>
+		<p>
+			<a href="nlp_clusters.html">NLP clusters</a>
+
 		</p>
 	</section>
 
