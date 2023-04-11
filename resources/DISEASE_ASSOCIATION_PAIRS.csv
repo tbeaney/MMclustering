@@ -1,0 +1,507 @@
+Disease1,Disease2
+Acne,Polycystic ovarian syndrome
+Alcohol Misuse,Alcoholic liver disease
+Alcohol Misuse,Anxiety disorders
+Alcohol Misuse,Atrial Fibrillation
+Alcohol Misuse,Cirrhosis
+Alcohol Misuse,Pancreatitis
+Alcoholic liver disease,Alcohol Misuse
+Alcoholic liver disease,Cirrhosis
+Alcoholic liver disease,Hepatic failure
+Alcoholic liver disease,Oesophageal varices
+Alcoholic liver disease,Portal hypertension
+Alcoholic liver disease,Primary Malignancy_Liver
+Allergic and chronic rhinitis,Asthma
+Allergic and chronic rhinitis,Chronic sinusitis
+Allergic and chronic rhinitis,Hypertrophic Nasal Turbinates
+Alopecia areata,Thyroid Disease
+Ankylosing spondylitis,Anterior and Intermediate Uveitis
+Ankylosing spondylitis,Crohn's disease
+Ankylosing spondylitis,Osteoporosis
+Ankylosing spondylitis,Psoriasis
+Ankylosing spondylitis,Ulcerative colitis
+Anterior and Intermediate Uveitis,Ankylosing spondylitis
+Anterior and Intermediate Uveitis,Crohn's disease
+Anterior and Intermediate Uveitis,Ulcerative colitis
+Anxiety disorders,Alcohol Misuse
+Anxiety disorders,Autism and Asperger's syndrome
+Anxiety disorders,Depression
+Aplastic anaemias,Leukaemia
+Asbestosis,Pleural plaque
+Asbestosis,Primary Malignancy_Lung
+Asbestosis,Primary Malignancy_Mesothelioma
+Asbestosis,Secondary pulmonary hypertension
+Asthma,Allergic and chronic rhinitis
+Atrial Fibrillation,Alcohol Misuse
+Atrial Fibrillation,Chronic Kidney Disease
+Atrial Fibrillation,COPD
+Atrial Fibrillation,Coronary Heart Disease (not otherwise specified)
+Atrial Fibrillation,Heart failure
+Atrial Fibrillation,Hypertension
+Atrial Fibrillation,Ischaemic stroke
+Atrial Fibrillation,Nonrheumatic mitral valve disorders
+Atrial Fibrillation,Obesity
+Atrial Fibrillation,Rheumatic Valve Disorder
+Atrial Fibrillation,Stroke_not otherwise specified
+Atrial Fibrillation,Thyroid Disease
+Atrial Fibrillation,Transient ischaemic attack
+Atrioventricular blocks,Myocardial Infarction
+Atrioventricular blocks,Sick sinus syndrome
+Autism and Asperger's syndrome,Anxiety disorders
+Autism and Asperger's syndrome,Depression
+Autism and Asperger's syndrome,Down's syndrome
+Autism and Asperger's syndrome,Epilepsy
+Autism and Asperger's syndrome,Intellectual disability
+Autoimmune liver disease,Cirrhosis
+Autoimmune liver disease,Lupus Erythematosus
+Barrett's oesophagus,Gastro-oesophageal reflux disease
+Barrett's oesophagus,Primary Malignancy_Oesophageal
+Bipolar affective disorder and mania,Depression
+Bipolar affective disorder and mania,Substance Misuse
+Bronchiectasis,Cystic Fibrosis
+Bronchiectasis,Secondary pulmonary hypertension
+Cardiomyopathy_other,Heart failure
+Cataract,Diabetes Mellitus_other or not specified
+Cataract,Type 1 Diabetes Mellitus
+Cataract,Type 2 Diabetes Mellitus
+Cerebral Palsy,Epilepsy
+Cerebral Palsy,Intellectual disability
+Chronic Cystitis,Multiple sclerosis
+Chronic Cystitis,Urinary Incontinence
+Chronic Fatigue Syndrome,Depression
+Chronic Kidney Disease,Atrial Fibrillation
+Chronic Kidney Disease,Coronary Heart Disease (not otherwise specified)
+Chronic Kidney Disease,Diabetes Mellitus_other or not specified
+Chronic Kidney Disease,Glomerulonephritis
+Chronic Kidney Disease,Gout
+Chronic Kidney Disease,Heart failure
+Chronic Kidney Disease,Hypertension
+Chronic Kidney Disease,Lupus Erythematosus
+Chronic Kidney Disease,Obstructive and reflux uropathy
+Chronic Kidney Disease,Sickle Cell Disease
+Chronic Kidney Disease,Tubulo-interstitial nephritis
+Chronic Kidney Disease,Type 1 Diabetes Mellitus
+Chronic Kidney Disease,Type 2 Diabetes Mellitus
+Chronic sinusitis,Allergic and chronic rhinitis
+Chronic sinusitis,Cystic Fibrosis
+Chronic viral hepatitis,Cirrhosis
+Chronic viral hepatitis,Hepatic failure
+Cirrhosis,Alcohol Misuse
+Cirrhosis,Alcoholic liver disease
+Cirrhosis,Autoimmune liver disease
+Cirrhosis,Chronic viral hepatitis
+Cirrhosis,Fatty Liver
+Cirrhosis,Hepatic failure
+Cirrhosis,HIV
+Cirrhosis,Oesophageal varices
+Cirrhosis,Portal hypertension
+Cirrhosis,Primary Malignancy_Liver
+Cirrhosis,Substance Misuse
+Coeliac disease,Down's syndrome
+Coeliac disease,Hyposplenism
+Coeliac disease,Osteoporosis
+Coeliac disease,Pancreatitis
+Coeliac disease,Peripheral Neuropathy
+Coeliac disease,Type 1 Diabetes Mellitus
+Collapsed vertebra,Osteoporosis
+Congenital Septal Defect,Down's syndrome
+COPD,Atrial Fibrillation
+COPD,Heart failure
+COPD,Primary Malignancy_Lung
+COPD,Secondary polycythaemia
+COPD,Secondary pulmonary hypertension
+Coronary Heart Disease (not otherwise specified),Atrial Fibrillation
+Coronary Heart Disease (not otherwise specified),Chronic Kidney Disease
+Coronary Heart Disease (not otherwise specified),Diabetes Mellitus_other or not specified
+Coronary Heart Disease (not otherwise specified),Heart failure
+Coronary Heart Disease (not otherwise specified),Hypertension
+Coronary Heart Disease (not otherwise specified),Myocardial Infarction
+Coronary Heart Disease (not otherwise specified),Obesity
+Coronary Heart Disease (not otherwise specified),Peripheral Vascular Disease
+Coronary Heart Disease (not otherwise specified),Rheumatoid Arthritis
+Coronary Heart Disease (not otherwise specified),Stable Angina
+Coronary Heart Disease (not otherwise specified),Type 1 Diabetes Mellitus
+Coronary Heart Disease (not otherwise specified),Type 2 Diabetes Mellitus
+Coronary Heart Disease (not otherwise specified),Unstable Angina
+Crohn's disease,Ankylosing spondylitis
+Crohn's disease,Anterior and Intermediate Uveitis
+Crohn's disease,Enteropathic arthropathy
+Crohn's disease,Primary Malignancy_Bowel
+Cystic Fibrosis,Bronchiectasis
+Cystic Fibrosis,Chronic sinusitis
+Cystic Fibrosis,Osteoporosis
+Cystic Fibrosis,Secondary pulmonary hypertension
+Dementia,Down's syndrome
+Dementia,Ischaemic stroke
+Dementia,Parkinson's disease
+Dementia,Stroke_not otherwise specified
+Dementia,Transient ischaemic attack
+Depression,Anxiety disorders
+Depression,Autism and Asperger's syndrome
+Depression,Bipolar affective disorder and mania
+Depression,Chronic Fatigue Syndrome
+Depression,Schizophrenia
+Diabetes Mellitus_other or not specified,Cataract
+Diabetes Mellitus_other or not specified,Chronic Kidney Disease
+Diabetes Mellitus_other or not specified,Coronary Heart Disease (not otherwise specified)
+Diabetes Mellitus_other or not specified,Diabetic Eye Disease
+Diabetes Mellitus_other or not specified,Diabetic Neuropathy
+Diabetes Mellitus_other or not specified,Peripheral Vascular Disease
+Diabetic Eye Disease,Diabetes Mellitus_other or not specified
+Diabetic Eye Disease,Type 1 Diabetes Mellitus
+Diabetic Eye Disease,Type 2 Diabetes Mellitus
+Diabetic Eye Disease,Visual impairment and blindness
+Diabetic Neuropathy,Diabetes Mellitus_other or not specified
+Diabetic Neuropathy,Type 1 Diabetes Mellitus
+Diabetic Neuropathy,Type 2 Diabetes Mellitus
+Diaphragmatic hernia,Gastro-oesophageal reflux disease
+Dilated cardiomyopathy,Heart failure
+Down's syndrome,Autism and Asperger's syndrome
+Down's syndrome,Coeliac disease
+Down's syndrome,Congenital Septal Defect
+Down's syndrome,Dementia
+Down's syndrome,Epilepsy
+Down's syndrome,Hearing loss
+Down's syndrome,Intellectual disability
+Down's syndrome,Leukaemia
+Down's syndrome,Thyroid Disease
+Dysmenorrhoea,Endometriosis
+Endometriosis,Dysmenorrhoea
+Enteropathic arthropathy,Crohn's disease
+Enteropathic arthropathy,Ulcerative colitis
+Epilepsy,Autism and Asperger's syndrome
+Epilepsy,Cerebral Palsy
+Epilepsy,Down's syndrome
+Fatty Liver,Cirrhosis
+Fatty Liver,Hepatic failure
+Fatty Liver,Hypertension
+Fatty Liver,Low HDL-C
+Fatty Liver,Obesity
+Fatty Liver,Primary Malignancy_Liver
+Fatty Liver,Raised LDL-C
+Fatty Liver,Raised Total Cholesterol
+Fatty Liver,Raised Triglycerides
+Fatty Liver,Type 2 Diabetes Mellitus
+Folate deficiency anaemia,Vitamin B12 deficiency anaemia
+Gastritis and duodenitis,Vitamin B12 deficiency anaemia
+Gastro-oesophageal reflux disease,Barrett's oesophagus
+Gastro-oesophageal reflux disease,Diaphragmatic hernia
+Gastro-oesophageal reflux disease,Obesity
+Giant Cell arteritis,Polymyalgia Rheumatica
+Giant Cell arteritis,Visual impairment and blindness
+Glaucoma,Visual impairment and blindness
+Glomerulonephritis,Chronic Kidney Disease
+Gout,Chronic Kidney Disease
+Hearing loss,Down's syndrome
+Hearing loss,Meniere's Disease
+Heart failure,Atrial Fibrillation
+Heart failure,Cardiomyopathy_other
+Heart failure,Chronic Kidney Disease
+Heart failure,COPD
+Heart failure,Coronary Heart Disease (not otherwise specified)
+Heart failure,Dilated cardiomyopathy
+Heart failure,Hypertension
+Heart failure,Hypertrophic Cardiomyopathy
+Heart failure,Multiple valve disorder
+Heart failure,Myocardial Infarction
+Heart failure,Nonrheumatic aortic valve disorders
+Heart failure,Nonrheumatic mitral valve disorders
+Heart failure,Primary pulmonary hypertension
+Heart failure,Pulmonary Fibrosis
+Heart failure,Rheumatic Valve Disorder
+Heart failure,Secondary pulmonary hypertension
+Heart failure,Type 2 Diabetes Mellitus
+Hepatic failure,Alcoholic liver disease
+Hepatic failure,Chronic viral hepatitis
+Hepatic failure,Cirrhosis
+Hepatic failure,Fatty Liver
+Hepatic failure,HIV
+Hepatic failure,Portal hypertension
+HIV,Cirrhosis
+HIV,Hepatic failure
+Hypersplenism,Portal hypertension
+Hypersplenism,Sickle Cell Disease
+Hypertension,Atrial Fibrillation
+Hypertension,Chronic Kidney Disease
+Hypertension,Coronary Heart Disease (not otherwise specified)
+Hypertension,Fatty Liver
+Hypertension,Heart failure
+Hypertension,Intracerebral haemorrhage
+Hypertension,Ischaemic stroke
+Hypertension,Myocardial Infarction
+Hypertension,Obesity
+Hypertension,Peripheral Vascular Disease
+Hypertension,Retinal vascular occlusions
+Hypertension,Sleep apnoea
+Hypertension,Stroke_not otherwise specified
+Hypertension,Subarachnoid haemorrhage
+Hypertension,Transient ischaemic attack
+Hypertension,Type 2 Diabetes Mellitus
+Hypertrophic Cardiomyopathy,Heart failure
+Hypertrophic Nasal Turbinates,Allergic and chronic rhinitis
+Hyposplenism,Coeliac disease
+Hyposplenism,Sickle Cell Disease
+Hyposplenism,Thalassaemia
+Intellectual disability,Autism and Asperger's syndrome
+Intellectual disability,Cerebral Palsy
+Intellectual disability,Down's syndrome
+Intracerebral haemorrhage,Hypertension
+Ischaemic stroke,Atrial Fibrillation
+Ischaemic stroke,Dementia
+Ischaemic stroke,Hypertension
+Ischaemic stroke,Sickle Cell Disease
+Ischaemic stroke,Transient ischaemic attack
+Ischaemic stroke,Type 2 Diabetes Mellitus
+Left bundle branch block,Myocardial Infarction
+Leukaemia,Aplastic anaemias
+Leukaemia,Down's syndrome
+Leukaemia,Myelodysplastic Syndrome
+Leukaemia,Other haemolytic anaemias
+Leukaemia,Polycythaemia vera
+Low HDL-C,Fatty Liver
+Low HDL-C,Myocardial Infarction
+Low HDL-C,Obesity
+Low HDL-C,Raised LDL-C
+Low HDL-C,Raised Total Cholesterol
+Low HDL-C,Raised Triglycerides
+Low HDL-C,Type 2 Diabetes Mellitus
+Lupus Erythematosus,Autoimmune liver disease
+Lupus Erythematosus,Chronic Kidney Disease
+Lupus Erythematosus,Raynaud's syndrome
+Lupus Erythematosus,Secondary Thrombocytopaenia
+Lupus Erythematosus,Sjogren's Syndrome
+Macular degeneration,Visual impairment and blindness
+Meniere's Disease,Hearing loss
+Meniere's Disease,Tinnitus
+Multiple sclerosis,Chronic Cystitis
+Multiple sclerosis,Neuropathic Bladder
+Multiple sclerosis,Trigeminal neuralgia
+Multiple sclerosis,Urinary Incontinence
+Multiple sclerosis,Visual impairment and blindness
+Multiple valve disorder,Heart failure
+Myasthenia gravis,Thyroid Disease
+Myelodysplastic Syndrome,Leukaemia
+Myocardial Infarction,Atrioventricular blocks
+Myocardial Infarction,Coronary Heart Disease (not otherwise specified)
+Myocardial Infarction,Heart failure
+Myocardial Infarction,Hypertension
+Myocardial Infarction,Left bundle branch block
+Myocardial Infarction,Low HDL-C
+Myocardial Infarction,Nonrheumatic mitral valve disorders
+Myocardial Infarction,Obesity
+Myocardial Infarction,Raised LDL-C
+Myocardial Infarction,Raised Total Cholesterol
+Myocardial Infarction,Raised Triglycerides
+Myocardial Infarction,Right bundle branch block combinations
+Myocardial Infarction,Stable Angina
+Myocardial Infarction,Unstable Angina
+Myocardial Infarction,Ventricular tachycardia
+Neuropathic Bladder,Multiple sclerosis
+Neuropathic Bladder,Parkinson's disease
+Neuropathic Bladder,Urinary Incontinence
+Nonrheumatic aortic valve disorders,Heart failure
+Nonrheumatic mitral valve disorders,Atrial Fibrillation
+Nonrheumatic mitral valve disorders,Heart failure
+Nonrheumatic mitral valve disorders,Myocardial Infarction
+Obesity,Atrial Fibrillation
+Obesity,Coronary Heart Disease (not otherwise specified)
+Obesity,Fatty Liver
+Obesity,Gastro-oesophageal reflux disease
+Obesity,Hypertension
+Obesity,Low HDL-C
+Obesity,Myocardial Infarction
+Obesity,Osteoarthritis (excl spine)
+Obesity,Polycystic ovarian syndrome
+Obesity,Raised LDL-C
+Obesity,Raised Total Cholesterol
+Obesity,Raised Triglycerides
+Obesity,Sleep apnoea
+Obesity,Type 2 Diabetes Mellitus
+Obstructive and reflux uropathy,Chronic Kidney Disease
+Oesophageal varices,Alcoholic liver disease
+Oesophageal varices,Cirrhosis
+Oesophageal varices,Portal hypertension
+Osteoarthritis (excl spine),Obesity
+Osteoarthritis (excl spine),Spondylosis
+Osteoporosis,Ankylosing spondylitis
+Osteoporosis,Coeliac disease
+Osteoporosis,Collapsed vertebra
+Osteoporosis,Cystic Fibrosis
+Other haemolytic anaemias,Leukaemia
+Pancreatitis,Alcohol Misuse
+Pancreatitis,Coeliac disease
+Parkinson's disease,Dementia
+Parkinson's disease,Neuropathic Bladder
+Parkinson's disease,Urinary Incontinence
+Peripheral Neuropathy,Coeliac disease
+Peripheral Vascular Disease,Coronary Heart Disease (not otherwise specified)
+Peripheral Vascular Disease,Diabetes Mellitus_other or not specified
+Peripheral Vascular Disease,Hypertension
+Peripheral Vascular Disease,Stable Angina
+Peripheral Vascular Disease,Type 2 Diabetes Mellitus
+Peripheral Vascular Disease,Unstable Angina
+Pleural plaque,Asbestosis
+Polycystic ovarian syndrome,Acne
+Polycystic ovarian syndrome,Obesity
+Polycystic ovarian syndrome,Type 2 Diabetes Mellitus
+Polycythaemia vera,Leukaemia
+Polymyalgia Rheumatica,Giant Cell arteritis
+Portal hypertension,Alcoholic liver disease
+Portal hypertension,Cirrhosis
+Portal hypertension,Hepatic failure
+Portal hypertension,Hypersplenism
+Portal hypertension,Oesophageal varices
+Primary Malignancy_Bowel,Crohn's disease
+Primary Malignancy_Bowel,Ulcerative colitis
+Primary Malignancy_Liver,Alcoholic liver disease
+Primary Malignancy_Liver,Cirrhosis
+Primary Malignancy_Liver,Fatty Liver
+Primary Malignancy_Lung,Asbestosis
+Primary Malignancy_Lung,COPD
+Primary Malignancy_Mesothelioma,Asbestosis
+Primary Malignancy_Oesophageal,Barrett's oesophagus
+Primary pulmonary hypertension,Heart failure
+Psoriasis,Ankylosing spondylitis
+Psoriasis,Psoriatic Arthritis
+Psoriatic Arthritis,Psoriasis
+Pulmonary Fibrosis,Heart failure
+Pulmonary Fibrosis,Rheumatoid Arthritis
+Pulmonary Fibrosis,Secondary polycythaemia
+Pulmonary Fibrosis,Secondary pulmonary hypertension
+Raised LDL-C,Fatty Liver
+Raised LDL-C,Low HDL-C
+Raised LDL-C,Myocardial Infarction
+Raised LDL-C,Obesity
+Raised LDL-C,Raised Total Cholesterol
+Raised LDL-C,Raised Triglycerides
+Raised LDL-C,Type 2 Diabetes Mellitus
+Raised Total Cholesterol,Fatty Liver
+Raised Total Cholesterol,Low HDL-C
+Raised Total Cholesterol,Myocardial Infarction
+Raised Total Cholesterol,Obesity
+Raised Total Cholesterol,Raised LDL-C
+Raised Total Cholesterol,Raised Triglycerides
+Raised Total Cholesterol,Type 2 Diabetes Mellitus
+Raised Triglycerides,Fatty Liver
+Raised Triglycerides,Low HDL-C
+Raised Triglycerides,Myocardial Infarction
+Raised Triglycerides,Obesity
+Raised Triglycerides,Raised LDL-C
+Raised Triglycerides,Raised Total Cholesterol
+Raised Triglycerides,Type 2 Diabetes Mellitus
+Raynaud's syndrome,Lupus Erythematosus
+Raynaud's syndrome,Scleroderma
+Retinal vascular occlusions,Hypertension
+Retinal vascular occlusions,Visual impairment and blindness
+Rheumatic Valve Disorder,Atrial Fibrillation
+Rheumatic Valve Disorder,Heart failure
+Rheumatoid Arthritis,Coronary Heart Disease (not otherwise specified)
+Rheumatoid Arthritis,Pulmonary Fibrosis
+Right bundle branch block combinations,Myocardial Infarction
+Schizophrenia,Depression
+Schizophrenia,Substance Misuse
+Scleroderma,Raynaud's syndrome
+Scleroderma,Sjogren's Syndrome
+Secondary polycythaemia,COPD
+Secondary polycythaemia,Pulmonary Fibrosis
+Secondary pulmonary hypertension,Asbestosis
+Secondary pulmonary hypertension,Bronchiectasis
+Secondary pulmonary hypertension,COPD
+Secondary pulmonary hypertension,Cystic Fibrosis
+Secondary pulmonary hypertension,Heart failure
+Secondary pulmonary hypertension,Pulmonary Fibrosis
+Secondary pulmonary hypertension,Sickle Cell Disease
+Secondary Thrombocytopaenia,Lupus Erythematosus
+Sick sinus syndrome,Atrioventricular blocks
+Sickle Cell Disease,Chronic Kidney Disease
+Sickle Cell Disease,Hypersplenism
+Sickle Cell Disease,Hyposplenism
+Sickle Cell Disease,Ischaemic stroke
+Sickle Cell Disease,Secondary pulmonary hypertension
+Sickle Cell Disease,Stroke_not otherwise specified
+Sickle Cell Disease,Transient ischaemic attack
+Sjogren's Syndrome,Lupus Erythematosus
+Sjogren's Syndrome,Scleroderma
+Sleep apnoea,Hypertension
+Sleep apnoea,Obesity
+Sleep apnoea,Type 2 Diabetes Mellitus
+Spinal stenosis,Spondylosis
+Spondylosis,Osteoarthritis (excl spine)
+Spondylosis,Spinal stenosis
+Stable Angina,Coronary Heart Disease (not otherwise specified)
+Stable Angina,Myocardial Infarction
+Stable Angina,Peripheral Vascular Disease
+Stable Angina,Unstable Angina
+Stroke_not otherwise specified,Atrial Fibrillation
+Stroke_not otherwise specified,Dementia
+Stroke_not otherwise specified,Hypertension
+Stroke_not otherwise specified,Sickle Cell Disease
+Stroke_not otherwise specified,Type 2 Diabetes Mellitus
+Subarachnoid haemorrhage,Hypertension
+Substance Misuse,Bipolar affective disorder and mania
+Substance Misuse,Cirrhosis
+Substance Misuse,Schizophrenia
+Thalassaemia,Hyposplenism
+Thrombophilia,Venous thromboembolic disease (Excl PE)
+Thyroid Disease,Alopecia areata
+Thyroid Disease,Atrial Fibrillation
+Thyroid Disease,Down's syndrome
+Thyroid Disease,Myasthenia gravis
+Thyroid Disease,Vitiligo
+Tinnitus,Meniere's Disease
+Transient ischaemic attack,Atrial Fibrillation
+Transient ischaemic attack,Dementia
+Transient ischaemic attack,Hypertension
+Transient ischaemic attack,Ischaemic stroke
+Transient ischaemic attack,Sickle Cell Disease
+Transient ischaemic attack,Type 2 Diabetes Mellitus
+Trigeminal neuralgia,Multiple sclerosis
+Tubulo-interstitial nephritis,Chronic Kidney Disease
+Type 1 Diabetes Mellitus,Cataract
+Type 1 Diabetes Mellitus,Chronic Kidney Disease
+Type 1 Diabetes Mellitus,Coeliac disease
+Type 1 Diabetes Mellitus,Coronary Heart Disease (not otherwise specified)
+Type 1 Diabetes Mellitus,Diabetic Eye Disease
+Type 1 Diabetes Mellitus,Diabetic Neuropathy
+Type 2 Diabetes Mellitus,Cataract
+Type 2 Diabetes Mellitus,Chronic Kidney Disease
+Type 2 Diabetes Mellitus,Coronary Heart Disease (not otherwise specified)
+Type 2 Diabetes Mellitus,Diabetic Eye Disease
+Type 2 Diabetes Mellitus,Diabetic Neuropathy
+Type 2 Diabetes Mellitus,Fatty Liver
+Type 2 Diabetes Mellitus,Heart failure
+Type 2 Diabetes Mellitus,Hypertension
+Type 2 Diabetes Mellitus,Ischaemic stroke
+Type 2 Diabetes Mellitus,Low HDL-C
+Type 2 Diabetes Mellitus,Obesity
+Type 2 Diabetes Mellitus,Peripheral Vascular Disease
+Type 2 Diabetes Mellitus,Polycystic ovarian syndrome
+Type 2 Diabetes Mellitus,Raised LDL-C
+Type 2 Diabetes Mellitus,Raised Total Cholesterol
+Type 2 Diabetes Mellitus,Raised Triglycerides
+Type 2 Diabetes Mellitus,Sleep apnoea
+Type 2 Diabetes Mellitus,Stroke_not otherwise specified
+Type 2 Diabetes Mellitus,Transient ischaemic attack
+Ulcerative colitis,Ankylosing spondylitis
+Ulcerative colitis,Anterior and Intermediate Uveitis
+Ulcerative colitis,Enteropathic arthropathy
+Ulcerative colitis,Primary Malignancy_Bowel
+Unstable Angina,Coronary Heart Disease (not otherwise specified)
+Unstable Angina,Myocardial Infarction
+Unstable Angina,Peripheral Vascular Disease
+Unstable Angina,Stable Angina
+Urinary Incontinence,Chronic Cystitis
+Urinary Incontinence,Multiple sclerosis
+Urinary Incontinence,Neuropathic Bladder
+Urinary Incontinence,Parkinson's disease
+Venous thromboembolic disease (Excl PE),Thrombophilia
+Ventricular tachycardia,Myocardial Infarction
+Visual impairment and blindness,Diabetic Eye Disease
+Visual impairment and blindness,Giant Cell arteritis
+Visual impairment and blindness,Glaucoma
+Visual impairment and blindness,Macular degeneration
+Visual impairment and blindness,Multiple sclerosis
+Visual impairment and blindness,Retinal vascular occlusions
+Vitamin B12 deficiency anaemia,Folate deficiency anaemia
+Vitamin B12 deficiency anaemia,Gastritis and duodenitis
+Vitiligo,Thyroid Disease
