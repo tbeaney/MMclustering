@@ -16,12 +16,12 @@
 			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href="index.html">Home</a>
 			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href=#background>Background</a>
 			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href=#inprogress>Work in Progress</a>
-</header>
+	</header>
 	<p style="text-align:center; padding-top:2%;margin:0px;"><img src="images/MEDCODE_CLUSTERS.jpg" alt="Disease clusters" style="width:600px;" /></p>
 	<h4 style="text-align:center;margin: 0px;">Author: Thomas Beaney</h4>
 	<p style="text-align:center;margin: 0px;"> Wellcome Clinical Research Fellow
 	<p style="text-align:center;margin: 0px;">Imperial College London</p>
-	<p style="text-align:center;margin: 0px;";href:"> <a href="https://tbeaney.github.io/index.html">Personal webpage </a> </p>
+	<p style="text-align:center;margin: 0px;" ;href:"> <a href="https://tbeaney.github.io/index.html">Personal webpage </a> </p>
 	<p style="text-align:center; margin: 0px;padding-bottom: 2%">
 		<a style="padding-left:1%;padding-right:1%" href="mailto:thomas.beaney@imperial.ac.uk" target="_blank"><i class="material-icons" style="height:22px;vertical-align:middle">&#xe0be;</i></a>
 		<a style="padding-left:1%;padding-right:1%" href="https://twitter.com/drtombeaney" target="_blank"><img src="images/twitter-logo.png" alt="Twitter" style="height:20px;vertical-align:middle"></a>
@@ -33,25 +33,32 @@
 		This website is a work in progress and will be updated as findings are developed.
 	</p>
 
+	<p>
+		Supervisors: Professor Paul Aylin, Professor Mauricio Barahona, Professor Azeem Majeed, Dr Tom Woodcock, Dr Jonathan Clarke
+	</p>
+	<p>
+		This work is funded by the Wellcome Trust 4i programme at Imperial College London.
+	</p>
+
 	<section id="background">
 		<h2>Background</h2>
 		<p>
-			Multimorbidity, or the presence of multiple long-term conditions in one person is a growing priority for health systems.
-			Healthcare has traditionally been designed around referral and treatment of single diseases, meaning that people with more than one disease often need to see multiple specialists who may have conflicting priorities regarding a person's management.
-			There is a growing interest in defining groups of similar diseases or similar people, often referred to as 'clusters', with the hope that these might help identify shared causes between diseases, and shared opportunities for prevention and treatment.
+			Multimorbidity, or the presence of multiple long-term conditions in one person is a growing priority for health systems across the world.
+			Healthcare has traditionally been designed around the referral and treatment of single diseases, meaning that people with more than one disease often need to see multiple specialists who may have conflicting priorities regarding a person's management.
+			There is a growing interest in defining groups of similar diseases or people with similar diseases, often referred to as 'clusters', with the hope that these might help identify shared causes between diseases, and shared opportunities for prevention and treatment.
 		</p>
 
 		<p>
-			In my PhD, I aim firstly to develop clusters of both diseases and people based on patterns of how diseases co-occur.
+			In my PhD, I aim firstly to develop clusters of both diseases and people based on patterns of diseases co-occurrence in a person.
 			Secondly, I aim to explore the relationship between clusters of people with health outcomes (such as mortality) and healthcare utilisation (for example, whether a person is admitted to hospital).
 			Disease clusters can help us to identify similarity between diseases, which can aid in understanding shared mechanisms of disease development.
 			However, disease clusters are limited in terms of understanding relationships with outcomes and with healthcare use, and for this reason, I develop and focus on clusters of people.
 		</p>
 
 		<p>
-			To determine the similarity between diseases and people, I adopt methods developed in natural language processing (NLP).
-			These methods are designed for the analysis of sequences of words.
-			In my PhD, I apply the same methods instead to sequences of diagnostic medical codes in the electronic healthcare record in general practice in England.
+			To determine the similarity between diseases and people, I focus on methods developed in natural language processing (NLP).
+			These methods are designed for the analysis of sequences of words and can handle large datasets.
+			In my PhD, I apply the same methods to sequences of diagnostic medical codes in the electronic healthcare record in general practice in England.
 		</p>
 
 	</section>
@@ -61,13 +68,16 @@
 		<h2>Work in progress</h2>
 		<h3>Developing code lists</h3>
 		<p>
-			Most previous research on multimorbidity clusters have focussed on a small number of diseases (usually less than 20), which might miss relationships between diseases that are less common.
-			In my research, I aim to use data-driven methods that allow for all codes indicating a disease/disorder to be included.
+			Most previous research on multimorbidity clusters have focussed on a small number of diseases (usually less than 20), which might miss relationships between diseases that are less common
+			(see <a href="https://link.springer.com/article/10.1007/s10654-019-00568-5" )>Busija <i>et al</i> (2019)</a>).
+			In my research, I aim to use a more data-driven methods including all diagnostic codes indicating a disease/disorder to be included.
 			However, there are tens of thousands of distinct disease codes, and in order to assess the interpretability of the codes, categorisation of codes is required.
 			Others have used disease taxonomies or hierarchies, for example, chapters in the ICD-10 hierarchy of diseases.
-			However, hierarchies such as ICD-10 are based on 'systems', for example the 'respiratory system', and so may link based on anatomical proximity (such as asthma and lung fibrosis), rather than aetiology.
+			However, hierarchies such as ICD-10 are mostly 'systems' categorisations, for example the 'respiratory system', and so may link based on anatomical proximity (such as asthma and lung fibrosis), rather than aetiology.
+		</p>
+		<p>
 			For my PhD, I use a set of 212 diseases defined previously in the literature.
-			The original set of diseases were originally defined by Kuan and colleagues for the <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(19)30012-3/fulltext"> CALIBER study</a>,
+			The original set of diseases were defined by Kuan and colleagues for the <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(19)30012-3/fulltext"> CALIBER study</a>,
 			and available from the <a href="https://phenotypes.healthdatagateway.org"> HDRUK Phenotype Library </a>.
 			Of the original 308 conditions, Head and colleagues selected 211 conditions relevant to multimorbidity for a <a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(21)00146-X/fulltext"> study of multimorbidity incidence and prevalence</a>,
 			with the code lists available on <a href="https://github.com/annalhead/CPRD_multimorbidity_codelists">GitHub</a>.
@@ -75,24 +85,34 @@
 		</p>
 
 		<p>
-			I reviewed all codes in the original lists and made some edits to the codes.
-			I also created a new category of 'Chronic Primary Pain', as a condition which is frequently included in studies of multimorbidity, but not included in the original CALIBER code lists.
-			Where individual newly included conditions were already included in another category, for example Fibromyalgia included in 'Chronic Fatigue Syndrome', these conditions were removed.
+			I reviewed the codes in the original lists from Head and colleagues and made some edits to the codes.
+			I also created a new category of 'Chronic Primary Pain', as a common condition in primary care, and one that is frequently included in studies of multimorbidity, but not included in the original CALIBER code lists.
+			Where conditions were included in another category, these were removed, for example Fibromyalgia was originally included in 'Chronic Fatigue Syndrome', and was removed from this category.
 			There were also changes to the codes included for diabetes, with removal of codes indicating a specific Type 1 or Type 2 diagnosis from the 'Other/unspecified' diabetes category.
+			The full list of codes are available via the link below. The disease, disease number, system and system number are recorded as in the Head code lists.
+			The 'medcodeid' variable represents the unique code identifier available in CPRD.
+			The 'istest' category represents codes which have an assigned a value.
+			In these cases, whether a condition is incldued depends on the treshold value being met.
 		</p>
 
 		<p>
-			Link to download: [TBC]
+			Link to download: <a href="resources/MEDCODE_DISEASE_LIST.csv" download="MEDCODE_DISEASE_LIST.csv">MEDCODE_DISEASE_LIST.csv</a>
+		</p>
+
+		<p>
+			If importing the csv into software such as Microsoft Excel, be sure to import as text to avoid rounding of the Medcode IDs.
 		</p>
 
 
-		<h3>Developing list of well-established disease associations</h3>
+		<h3>Developing list of clinically established disease associations</h3>
 		<p>
-			In order to interpet disease clusters, we developed a set of 253 established disease association pairs.
-			The aim here is to provide a list of conditions which are clinically well-established to be associated with another, rather than an attempt to provide a comprehensive list of all possible associations.
+			In order to evaliuate the interpretability of disease clusters, we developed a set of 253 established disease association pairs.
+			The aim here is to provide a list of conditions which are clinically well-established to be associated with each other, but is not an attempt to provide a comprehensive list of all possible associations.
 			To create this list, I considered all 212 diseases, and used sources including the <a href="https://bestpractice.bmj.com/info/">BMJ Best Practice guidelines</a> to create a set of known disease associations for each disease, incorporating both known risk factors and known complications for a given disease.
 			The set of disease pairs were reviewed by two co-authors with clinical backgrounds and any disagreements were discussed.
 			A total of 144 conditions were included with at least one association to another disease.
+			The list is available to download via the link below.
+			Note that each pair appears twice, and depending on your purpose, you may wish to de-duplicate each pair of associations.
 		</p>
 
 		<p>
@@ -103,30 +123,32 @@
 
 		<h3>Visualising disease embeddings</h3>
 		<p>
+			Dimensionality reduction techniques were first used to visualise relationships between diseases.
 			Multiple Correspondence Analysis (MCA) was used to create a vector representation of each disease, trialling retention of different numbers of dimensions.
-			The link below shows the first two dimensions retained using MCA.
-			More similar diseases appear closer together.
-			Also overlaid on the plot are age category and the number of long-term conditions.
-			As can be seen, age and number of conditions are strongly represented on the first dimension.
+			The link below shows an interactive plot of diseases for the first two dimensions retained using MCA.
+			More similar diseases appear closer together on each dimension.
+			Also overlaid on the plot are patient age category and the number of long-term conditions (LTCs).
+			As can be seen, age and number of LTCs are strongly represented on the first dimension.
 			Conditions common in younger people tend to separate from those more common in older people along dimension 1.
-			Chronic liver conditions separate on dimension 2.
+			Chronic liver conditions separate strongly on dimension 2.
 		</p>
 
 		<p>
-			<a href="mca_fig.html">Interactive plot of first two dimensions from MCA</a>
+			<a href="mca_fig.html">Interactive plot of the first two dimensions from MCA</a>
 		</p>
 
 		<h3>Defining clusters of diseases</h3>
 		<p>
 			Disease clusters were created using a three-step process.
-			Firstly, vector representations ("disease embeddings") were created using a) MCA and b) NLP methods (<i>Word2vec</i> and <i>GloVe</i>)
+			Firstly, vector representations ("disease embeddings") were created using a) MCA and b) NLP methods (comparing <i>Word2vec</i> and <i>GloVe</i>)
 			Secondly, similarity of each disease to each other disease was determined by calculating the cosine similarity, creating a 212 by 212 matrix.
-			Thirdly, we clustered diseases based on their cosine similarity.
-			We adopted a graph-based clustering algorithm, Markov Multiscale Community Detection (MMCD), available on <a href="https://github.com/barahona-research-group/PyGenStability">GitHub</a>.
+			Thirdly, diseases were clustered based on their cosine similarity.
+			We adopted a graph-based clustering algorithm, Markov Multiscale Community Detection (MMCD), with a Python implementation available on <a href="https://github.com/barahona-research-group/PyGenStability">GitHub</a>.
+			This method identifies optimal clusters at different resolutions, and we compare the resulting clusters at a fine, medium and coarse resolution.
 		</p>
 
 		<p>
-			We created word cloud representations of the diseases, available for both MCA and Word2vec models below:
+			We created word cloud representations of the disease assignments to clusters, available for both MCA and Word2vec models below:
 
 		<p>
 			<a href="mca_clusters.html">MCA clusters</a>
