@@ -141,10 +141,23 @@
 		<p>
 			Disease clusters were created using a three-step process.
 			Firstly, vector representations ("disease embeddings") were created using a) MCA and b) NLP methods (comparing <i>Word2vec</i> and <i>GloVe</i>)
-			Secondly, similarity of each disease to each other disease was determined by calculating the cosine similarity, creating a 212 by 212 matrix.
-			Thirdly, diseases were clustered based on their cosine similarity.
-			We adopted a graph-based clustering algorithm, Markov Multiscale Community Detection (MMCD), with a Python implementation available on <a href="https://github.com/barahona-research-group/PyGenStability">GitHub</a>.
-			This method identifies optimal clusters at different resolutions, and we compare the resulting clusters at a fine, medium and coarse resolution.
+			Secondly, similarity of each disease to each other disease was determined by calculating the cosine similarity, creating a 212 by 212 matrix. These embeddings are available to download here:
+		<p>
+			Download:
+			<a href="resources/MCA.csv" download="MCA.csv">MCA embeddings</a>
+		</p>
+		<p>
+			Download:
+			<a href="resources/MCA.csv" download="SGM.csv">SGM embeddings</a>
+		</p>
+		Thirdly, diseases were clustered based on their cosine similarity.
+		We adopted a graph-based clustering algorithm, Markov Multiscale Community Detection (MMCD), with a Python implementation available on <a href="https://github.com/barahona-research-group/PyGenStability">GitHub</a>.
+		This method identifies optimal clusters at different resolutions, and we compare the resulting clusters at a fine, medium and coarse resolution. Our analysis pipeline is available in a Jupyter notebook below, which runs in Python version 3.8.10.
+		</p>
+
+		<p>
+			Download jupyter notebook:
+			<a href="resources/MMCD pipeline.ipynb" target="_blank">Open MMCD pipeline</a>
 		</p>
 
 		<p>
