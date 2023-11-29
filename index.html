@@ -140,8 +140,9 @@
 		<h3>Defining clusters of diseases</h3>
 		<p>
 			Disease clusters were created using a three-step process.
-			Firstly, vector representations ("disease embeddings") were created using a) MCA and b) NLP methods (comparing <i>Word2vec</i> and <i>GloVe</i>)
-			Secondly, similarity of each disease to each other disease was determined by calculating the cosine similarity, creating a 212 by 212 matrix. These embeddings are available to download here:
+			First, vector representations ("disease embeddings") were created using a) MCA and b) NLP methods (comparing <i>Word2vec</i> and <i>GloVe</i>).
+			Second, similarity of each disease to each other disease was determined by calculating the cosine similarity, creating a 212 by 212 matrix.
+			Of co-occurrence methods, we found MCA with 30 dimensions to perform best and of the NLP methods, we found skip-gram using multiple codes (SGM) to perform best. The MCA and SGM embeddings are available to download here:
 		<p>
 			Download:
 			<a href="resources/MCA.csv" download="MCA.csv">MCA embeddings</a>
@@ -150,26 +151,29 @@
 			Download:
 			<a href="resources/MCA.csv" download="SGM.csv">SGM embeddings</a>
 		</p>
-		Thirdly, diseases were clustered based on their cosine similarity.
+		Third, diseases were clustered based on their cosine similarity.
 		We adopted a graph-based clustering algorithm, Markov Multiscale Community Detection (MMCD), with a Python implementation available on <a href="https://github.com/barahona-research-group/PyGenStability">GitHub</a>.
-		This method identifies optimal clusters at different resolutions, and we compare the resulting clusters at a fine, medium and coarse resolution. Our analysis pipeline is available in a Jupyter notebook below, which runs in Python version 3.8.10.
+		This method identifies optimal clusters at different resolutions, and we compare the resulting clusters at a fine, medium and coarse resolution. Our analysis pipeline is available in a Jupyter notebook below,
+		which runs in Python version 3.8.10 and uses the MCA or SG-M embeddings.
 		</p>
 
 		<p>
 			Download jupyter notebook:
-			<a href="resources/MMCD pipeline.ipynb" target="_blank">Open MMCD pipeline</a>
+			<a href="resources/MMCD pipeline.ipynb" target="_blank">MMCD pipeline</a>
 		</p>
 
 		<p>
-			We created word cloud representations of the disease assignments to clusters, available for both MCA and Word2vec models below:
+			Finally, we created word cloud representations of the disease assignments to clusters, available for clusters derived from both MCA and SGM embeddings below:
 
 		<p>
 			<a href="mca_clusters.html">MCA clusters</a>
 		</p>
 		<p>
-			<a href="nlp_clusters.html">NLP clusters</a>
+			<a href="nlp_clusters.html">SGM clusters</a>
 
 		</p>
+		<p>Further details on our approach to identifying disease clusters can be found in our pre-print on <a href="https://www.medrxiv.org/content/10.1101/2023.06.30.23292080v1">medRxiv</a>.</p>
+		
 	</section>
 
 </body>
