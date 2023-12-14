@@ -1,0 +1,235 @@
+jobcatid,Description,GP,Nurse,Clinical_other,Admin,Other
+14,Health Care Support Worker,,,1,,
+4,General Medical Practitioner,1,,,,
+28,Receptionist,,,,1,
+18,Clerical Worker,,,,1,
+31,Sessional GP,1,,,,
+8,Community Practitioner,,,1,,
+1,Consultant,,,1,,
+12,Pharmacist,,,1,,
+24,GP Registrar,1,,,,
+9,Community Nurse,,1,,,
+19,Manager,,,,1,
+21,System Administrator,,,,1,
+25,Medical Student,,,1,,
+181,Locum GP,1,,,,
+36,Healthcare Assistant,,,1,,
+53,Senior Administrator,,,,1,
+27,Specialist Nurse Practitioner,,1,,,
+7,Midwife,,,1,,
+5,Salaried General Practitioner,1,,,,
+57,Community Administrator,,,,1,
+47,Staff Nurse,,1,,,
+30,Medical Secretary,,,,1,
+22,Desktop Support Administrator,,,,1,
+15,Associate Practitioner - General Practitioner,1,,,,
+26,Other Community Health Service - Admin Clerk,,,,1,
+34,Physiotherapist,,,1,,
+55,Associate Practitioner - Nurse,,1,,,
+29,Secretary,,,,1,
+71,Dispenser,,,,1,
+17,Phlebotomist,,,1,,
+16,Counsellor,,,1,,
+33,Nurse Consultant,,1,,,
+40,Appointments Clerk,,,,1,
+37,Medical Technical Officer - Pharmacy,,,1,,
+56,Senior Manager,,,,1,
+20,Analyst,,,,1,
+67,Technician - Admin & Clerical,,,,1,
+11,Dietitian,,,1,,
+105,Paramedic,,,1,,
+78,Paramedic Specialist Practitioner,,,1,,
+58,Associate Specialist,,,1,,
+52,Community Mental Health Nurse,,,1,,
+45,Clinical Coder,,,,1,
+61,Sister/Charge Nurse,,1,,,
+48,Enrolled Nurse,,1,,,
+60,Nurse Manager,,1,,,
+83,Other Community Health Service,,,,,1
+10,Chiropodist/Podiatrist,,,1,,
+73,Practitioner,,,1,,
+23,System Worker,,,,1,
+189,Physician Assistant,,,1,,
+74,Information Officer,,,,1,
+72,Clinical Assistant,,,1,,
+80,Physiotherapist Specialist Practitioner,,,1,,
+185,Advanced Practitioner,,,1,,
+70,Desktop Support Technician,,,,1,
+39,Helpdesk Administrator,,,,1,
+51,Helper/Assistant,,,,1,
+38,Health Records Administrator,,,,1,
+35,Specialist Practitioner,,,1,,
+13,Clinical Psychologist,,,1,,
+43,Trainee Practitioner,,,1,,
+88,Modern Matron,,1,,,
+46,Medical Records Clerk,,,,1,
+59,Student Practice Nurse,,1,,,
+64,Social Care Support Worker,,,,,1
+32,Clinical Application Administrator,,,,1,
+188,Other Community Health Service - Social Care Worker,,,,,1
+87,Associate Practitioner,,,1,,
+95,Assistant Practitioner,,,1,,
+84,Call Operator,,,,1,
+182,Researcher,,,,,1
+116,House Officer - Post Registration,,,1,,
+183,Assistant GP,,,1,,
+107,Availability Monitor,,,,,1
+62,Psychotherapist,,,1,,
+69,Health Records Clerk,,,,1,
+106,Physiotherapist Consultant,,,1,,
+104,Audit Manager,,,,1,
+114,Therapist,,,1,,
+42,Social Worker,,,,,1
+111,Student Nurse - Adult Branch,,1,,,
+102,Occupational Therapist,,,1,,
+66,Officer,,,,,1
+6,Midwife - Sister/Charge Nurse,,,1,,
+131,Pre-reg Pharmacist,,,1,,
+100,Medical Technical Officer,,,1,,
+41,Senior House Officer,,,1,,
+50,Nursery Nurse,,,,,1
+118,Dietitian Specialist Practitioner,,,1,,
+79,Clinical Team Manager,,,,1,
+68,Psychiatrist,,,1,,
+109,Gateway Worker,,,,,1
+85,Community Worker (children),,,,,1
+127,Student Community Practitioner,,,,,1
+75,Network Administrator,,,,1,
+81,Helpdesk Technician,,,,1,
+110,Medical Records Manager,,,,1,
+98,Student Health Visitor,,,1,,
+86,Paramedic Consultant,,,1,,
+190,Deputising Doctor,,,1,,
+112,Audiologist,,,1,,
+63,Osteopath,,,1,,
+82,Radiographer,,,1,,
+142,Student Technician,,,,,1
+138,Dietitian Consultant,,,1,,
+115,Student District Nurse,,1,,,
+90,Community Team Manager,,,,1,
+101,Midwife - Specialist Practitioner,,,1,,
+97,Technician - Additional Clinical Services,,,,,1
+44,Network Technician,,,,1,
+186,Health Visitor,,,1,,
+122,Patient Welfare Officer,,,,,1
+49,Multi Therapist,,,1,,
+54,Technician - Healthcare Scientists,,,,,1
+2,Hospital Practitioner,,,1,,
+119,Trust Grade Doctor - SHO level,,,1,,
+148,Midwife - Consultant,,,1,,
+136,Physiotherapist Manager,,,1,,
+140,Social work assistant (mental health),,,,,1
+231,Directory of Services Coordinator,,,,,1
+156,Midwife - Manager,,,1,,
+125,Chiropodist/Podiatrist Consultant,,,1,,
+132,Mental Health Act Administrator,,,,1,
+141,Chiropodist/Podiatrist Specialist Practitioner,,,1,,
+137,Healthcare Cadet,,,,,1
+77,Student Physiotherapist,,,1,,
+3,Clinical Medical Officer,,,1,,
+89,Asst. Clinical Medical Officer,,,1,,
+96,Community Learning Disabilities Nurse,,,1,,
+178,Senior Clinical Medical Officer,,,1,,
+173,House Officer - Pre Registration,,,1,,
+94,Optometrist,,,1,,
+121,Staff Grade,,,1,,
+151,Finance Director,,,,,1
+147,Dietitian Manager,,,1,,
+129,Waiting List Clerk,,,,1,
+199,Multi Therapist Specialist Practitioner,,,1,,
+192,Senior social worker (mental health),,,,,1
+159,Biomedical Scientist,,,,,1
+194,Trainer,,,,,1
+128,Healthcare Scientist,,,,,1
+65,Assistant Psychologist,,,1,,
+168,Approved Social Worker,,,,,1
+123,Occupational Therapy Specialist Practitioner,,,1,,
+150,Paramedic Manager,,,1,,
+91,Specialist Registrar,,,1,,
+163,Porter,,,,,1
+134,"Support, Time, Recovery Worker",,,1,,
+130,Clinical Director,,,1,,
+167,Clinical Director - Medical,,,1,,
+92,Chiropodist/Podiatrist Manager,,,1,,
+213,Intermediate Care staff,,,,,1
+207,Healthcare Science Associate,,,,,1
+154,Radiologist,,,1,,
+164,Social services care manager (adults),,,,,1
+155,Ward Manager,,,,1,
+99,Interpreter,,,,,1
+158,"Radiographer - Diagnostic, Specialist Practitioner",,,1,,
+133,Ward Clerk,,,,1,
+76,Chaplain,,,,,1
+113,Radiographer - Diagnostic,,,1,,
+160,Board Level Director,,,,,1
+172,Childcare Co-ordinator,,,,,1
+126,Trust Grade Doctor - Career Grade level,,,1,,
+117,Speech & Language Therapist,,,1,,
+157,Waiting List Manager,,,,1,
+208,Child Protection worker,,,,,1
+202,Social work assistant (adults),,,,,1
+120,Director of Public Health,,,,,1
+146,Social services care manager (mental health),,,,,1
+219,Social services senior management,,,,,1
+93,"Radiographer - Therapeutic, Manager",,,1,,
+212,Occupational Therapist Consultant,,,1,,
+176,Medical Director,,,1,,
+177,Trust Grade Doctor - Specialist Registrar level,,,1,,
+201,Healthcare Science Assistant,,,,,1
+198,Art Therapist,,,,,1
+226,Art Therapist Manager,,,,,1
+145,"Radiographer - Diagnostic, Manager",,,1,,
+152,Senior social worker (adults),,,,,1
+124,Technician - PS&T,,,,,1
+234,ODP,,,,,1
+143,Complaints Investigator,,,,1,
+165,Student Psychotherapist,,,1,,
+222,Nursery manager,,,,,1
+220,Home Care organiser,,,,,1
+223,Caldicott Guardian,,,,,1
+224,Specialist Healthcare Science Practitioner,,,,,1
+149,Art Therapist Consultant,,,,,1
+170,Other Executive Director,,,,,1
+162,Nursing Cadet,,,,,1
+169,Student Community Mental Health Nurse,,,1,,
+153,Student Midwife,,,1,,
+135,Art Therapist Specialist Practitioner,,,,,1
+103,Chief Executive,,,,,1
+229,Social work team manager (mental health),,,,,1
+197,Trust Grade Doctor - House Officer level,,,1,,
+218,Occupational Therapist Manager,,,1,,
+204,Intermediate Care worker,,,,,1
+205,Student Occupational Therapist,,,1,,
+166,Orthoptist,,,1,,
+221,Director of Nursing,,,,,1
+211,Student School Nurse,,,1,,
+217,Social Services information manager,,,,,1
+215,"Art, Music & Drama Student",,,,,1
+214,Home help,,,,,1
+171,Student Orthoptist,,,1,,
+191,Student Occupational Health Nurse,,,1,,
+206,Student Dietitian,,,1,,
+203,Social work team manager (adults),,,,,1
+175,Outpatient Manager,,,,1,
+196,Chair,,,,,1
+210,General Dental Practitioner,,,1,,
+225,Student Nurse - Mental Health Branch,,,1,,
+233,OT assistant,,,1,,
+232,Student Nurse - Learning Disabilities Branch,,,1,,
+193,Regional Dental Officer,,,1,,
+230,Playgroup leader,,,,,1
+195,Cytoscreener,,,,,1
+228,Assistant Psychotherapist,,,1,,
+227,Healthcare Science Practitioner,,,,,1
+144,Trainee Scientist,,,,,1
+184,Special salary scale in Public Health Medicine,,,,,1
+161,Non Executive Director,,,,,1
+209,Professor,,,,,1
+180,Reporting Radiographer,,,,,1
+139,Orthoptist Manager,,,1,,
+200,Drama Therapist,,,,,1
+179,Consultant Healthcare Scientist,,,,,1
+216,Specialist Healthcare Scientist,,,,,1
+187,Dental Assistant Clinical Director,,,,,1
+174,SODP,,,,,1
+108,Medical Laboratory Assistant,,,,,1
