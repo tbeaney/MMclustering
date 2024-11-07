@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Clustering people</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="v1-stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+        .dropdown > a {
+            color: black !important;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            color: black !important;
+            font-size: 14px;
+            text-align: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+
+    /* Show the dropdown on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body class='markdown-preview' data-use-github-style style="max-width: 1000px;margin: auto;">
+    <header style="border-top: 1.5px solid #4CAF50; border-bottom: 1.5px solid #4CAF50;">
+        <h1 style="text-align: center; font-size: 40px; margin: 0px; padding-top: 2%; color: black; background-color: white;">
+            Clustering Multiple Long-Term Conditions
+        </h1>
+        <h3 style="text-align: center; margin: 0px; padding-bottom: 2%; padding-top: 1%; background-color: white; ">
+            <div class="dropdown">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+                <a href="background.html">Background</a>
+                <div class="dropdown-content">
+                    <a href="background.html#mltc">What is MLTC?</a>
+                    <a href="background.html#clusters">Why cluster?</a>
+                    <a href="background.html#classification">Classification versus clustering</a>
+                    <a href="background.html#sequences">Co-occurrence versus sequences</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href=ehr_data.html>Using EHR data</a>
+                <div class="dropdown-content">
+                    <a href="ehr_data.html#data_sources">Data sources</a>
+                    <a href="ehr_data.html#mltc_codes">MLTC code lists</a>
+                    <a href="ehr_data.html#chronicity">When is a disease chronic?</a>
+                    <a href="ehr_data.html#code_frequency">Code frequency in EHRs</a>
+                    <a href="ehr_data.html#other_codes">Other code lists</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href=cluster_diseases.html>Clustering diseases</a>
+                <div class="dropdown-content">
+                    <a href="cluster_diseases.html#cluster_diseases_overview">Overview of approach</a>
+                    <a href="cluster_diseases.html#disease_embeddings">Disease embedding methods</a>
+                    <a href="cluster_diseases.html#disease_clustering">Disease clustering methods</a>
+                    <a href="cluster_diseases.html#disease_cluster_assignments">Disease cluster assignments</a>
+                    <a href="cluster_diseases.html#evaluation">Evaluation strategy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href=cluster_people.html>Clustering people</a>
+                <div class="dropdown-content">
+                    <a href="cluster_people.html#cluster_people_overview">Overview of approach</a>
+                    <a href="cluster_people.html#nlp_comparison">Representation methods</a>
+                    <a href="cluster_people.html#ehrbert">EHR-BERT</a>
+                    <a href="cluster_people.html#in_progress">Work in progress</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href=publications.html>Publications</a>
+            </div>
+        </h3>
+    </header>
+
+    <section id="cluster_people">
+        <h1 style="font-size: 30px; padding-bottom: 3%; border-bottom: 1.5px solid #4CAF50; ">Clustering people</h1>
+    </section>
+
+
+    <section id="cluster_people_overview">
+        <h3>Overview of approach for generating disease clusters</h3>
+
+        <p>
+            As with clustering diseases, clustering people used a two-step process:
+            <ol>
+                <li>
+                    Vector representations of people were created, based on each person's sequence of diseases.
+                </li>
+                <li>Unsupervised clustering of the vector representations to generate clusters of people.</li>
+            </ol>
+        </p>
+    </section>
+
+    <section id="nlp_comparison">
+        <h2>Comparing representation methods</h2>
+        <p>
+            We compared different methods of generating vector representations of people (based on their sequences of diseases), inspired by methods from NLP, including topic modelling and transformer architectures.
+            Each method generates an unsupervised vector representation of 6.3 million people with MLTC.
+            We also compared different inputs of using the raw Medcodes (n=9,462) or disease categories (n=212) as the sequence inputs.
+        </p>
+        <p>
+            Given the unsupervised generation of these embeddings, we required a strategy to select which embedding to use for clustering.
+            We rationalised that a good embedding will be one the captures a high degree of the inherent information in the disease sequences.
+            Therefore, we developed an evaluation strategy to select the embedding that could best predict future patient outcomes (using data that was not seen in generating the embeddings).
+            We used the patient vectors as inputs into a simple logistic classifier to predict the following outcomes in the 12 months after the embeddings were generated:
+        </p>
+
+        <ol>
+            <li>Mortality in those aged ≥ 65 years</li>
+            <li>Any emergency department attendance</li>
+            <li>Any emergency hospital admission</li>
+            <li>Any attendance with a diagnosis code for:</li>
+            <ol>
+                <li>Hypertension</li>
+                <li>Diabetes</li>
+                <li>Depression</li>
+            </ol>
+            <li>A new diagnosis of:</li>
+            <ol>
+                <li>Hypertension</li>
+                <li>Diabetes</li>
+                <li>Depression</li>
+            </ol>
+        </ol>
+
+        <h5>Analysis pipeline</h5>
+        <p style="text-align: center; padding-top: 1%; padding-bottom: 2%; margin:0px;">
+            <img src="images/PIPELINE_PEOPLE.pdf" alt="Pipeline for generating representations of people" style="width:1000px;" />
+            Used with permission from <a href="https://academic.oup.com/jamia/article/31/7/1451/7667337">Beaney et al (2024)</a>
+        </p>
+
+        <p>
+            Of the various methods we tested, we found transformer methods to perform best across outcomes.
+            The figure below shows the relative improvement in both AUC and APS averaged across all outcomes for each of the methods that we tested.
+            EHR-BERT was the best-performing method across all outcomes.
+            Use of the smaller number of 212 clinically categorised diseases performed slightly better than use of the larger vocabulary of Medcodes.
+        </p>
+        <p>
+            Further details of the comparisons and their performance for predicting outcomes are given in our publication in <a href="https://academic.oup.com/jamia/article/31/7/1451/7667337">JAMIA</a>.
+        </p>
+        <h5>Embedding performance for prediction</h5>
+        <p style="text-align: center; padding-top: 1%; padding-bottom: 2%; margin:0px;">
+            <img src="images/OUTCOMES_COMPOSITE.pdf" alt="PPatient embedding performance" style="width:1000px;" />
+        </p>
+
+
+    </section>
+
+    <section id="ehrbert">
+        <h2>EHR-BERT</h2>
+        <p>
+            We developed a transformer architecture inspired by BERT, and extending on the
+            <a href="https://github.com/deepmedicine/BEHRT/blob/master/preprocess/behrtFormat.py">BEHRT model</a>.
+            This model incorporates information on patient age, gender, ethnicity, socioeconomic deprivation (measured by the <a href="https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019">
+                Index of Multiple Deprivation
+            </a>) as well as the visit number and calendar year associated with each visit.
+        </p>
+
+        <h5>EHR-BERT architecture</h5>
+        <p style="text-align: center; padding-top: 1%; padding-bottom: 2%; margin:0px;">
+            <img src="images/EHR_BERT_ARCHITECTURE.pdf" alt="EHR-BERT architecture" style="width:1000px;" />
+            Used with permission from <a href="https://academic.oup.com/jamia/article/31/7/1451/7667337">Beaney et al (2024)</a>
+        </p>
+
+        <p>
+            Further information on the model is given in in our <a href="https://academic.oup.com/jamia/article/31/7/1451/7667337">publication</a>.
+            Codes relating to EHR-BERT are available to download below. The folder includes a python notebook, along with a dummy data set (in .pkl format), which runs in Python version 3.10.9.
+        </p>
+
+        <p>
+            Download EHR-BERT files:
+            <a href="resources/EHRBERT.zip" target="_blank">EHR-BERT folder</a>
+        </p>
+
+    </section>
+
+    <section id="in_progress">
+        <h3>Work in progress</h3>
+        <p>
+            We are working on generating clusters of people based on the embeddings of the best-performing EHR-BERT model.
+            Further information will be added here with a link to the pre-print when available.
+        </p>
+
+    </section>
+
+    <footer style=" text-align: center; background-color: #f1f1f1;">
+        <p style="padding-top: 2%; padding-bottom: 2%;">Author: Thomas Beaney, November 2024.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,204 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>Multimorbidity clustering</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="v1-stylesheet.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Clustering Multiple Long-Term Conditions</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="v1-stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+        .dropdown > a {
+            color: black !important;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            color: black !important;
+            font-size: 14px;
+            text-align: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+
+    /* Show the dropdown on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
 <body class='markdown-preview' data-use-github-style style="max-width: 1000px;margin: auto;">
-	<header>
-		<h1 style="text-align: center; font-size: 50px; margin: 0px; padding-top: 2%; background-color: white; ">Characterising clusters of multimorbidity</h1>
-		<h3 style="text-align: center; margin: 0px; padding-bottom: 2%; padding-top: 2%; background-color: white; ">
-			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href="index.html">Home</a>
-			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href=#background>Background</a>
-			<a style="color:black; padding-right:1%;padding-left:1%;text-decoration: none;" href=#inprogress>Work in Progress</a>
-	</header>
-	<p style="text-align:center; padding-top:2%;margin:0px;"><img src="images/MEDCODE_CLUSTERS.jpg" alt="Disease clusters" style="width:600px;" /></p>
-	<h4 style="text-align:center;margin: 0px;">Author: Thomas Beaney</h4>
-	<p style="text-align:center;margin: 0px;"> Wellcome Clinical Research Fellow
-	<p style="text-align:center;margin: 0px;">Imperial College London</p>
-	<p style="text-align:center;margin: 0px;" ;href:"> <a href="https://tbeaney.github.io/index.html">Personal webpage </a> </p>
-	<p style="text-align:center; margin: 0px;padding-bottom: 2%">
-		<a style="padding-left:1%;padding-right:1%" href="mailto:thomas.beaney@imperial.ac.uk" target="_blank"><i class="material-icons" style="height:22px;vertical-align:middle">&#xe0be;</i></a>
-		<a style="padding-left:1%;padding-right:1%" href="https://twitter.com/drtombeaney" target="_blank"><img src="images/twitter-logo.png" alt="Twitter" style="height:20px;vertical-align:middle"></a>
-		<a style="padding-left:1%;padding-right:1%" href="https://www.linkedin.com/in/thomas-beaney-72388893" target="_blank"><img src="images/LI-logo.png" alt="Twitter" style="height:20px;vertical-align:middle"></a>
+    <header style="border-top: 1.5px solid #4CAF50; border-bottom: 1.5px solid #4CAF50;">
+        <h1 style="text-align: center; font-size: 40px; margin: 0px; padding-top: 2%; color: black; background-color: white;">
+            Clustering Multiple Long-Term Conditions
+        </h1>
+        <h3 style="text-align: center; margin: 0px; padding-bottom: 2%; padding-top: 1%; background-color: white; ">
+            <div class="dropdown">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+                <a href="background.html">Background</a>
+                <div class="dropdown-content">
+                    <a href="background.html#mltc">What is MLTC?</a>
+                    <a href="background.html#clusters">Why cluster?</a>
+                    <a href="background.html#classification">Classification versus clustering</a>
+                    <a href="background.html#sequences">Co-occurrence versus sequences</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href=ehr_data.html>Using EHR data</a>
+                <div class="dropdown-content">
+                    <a href="ehr_data.html#data_sources">Data sources</a>
+                    <a href="ehr_data.html#mltc_codes">MLTC code lists</a>
+                    <a href="ehr_data.html#chronicity">When is a disease chronic?</a>
+                    <a href="ehr_data.html#code_frequency">Code frequency in EHRs</a>
+                    <a href="ehr_data.html#other_codes">Other code lists</a>
+                </div>
+            </div>
 
-	<p>
-		This site hosts resources related to research from my PhD on characterising multimorbidity clusters.
-		Here you can access code lists used in the research, as well as results including interactive versions of published figures designed to help visualise the relationships between diseases.
-		This website is a work in progress and will be updated as findings are developed.
-	</p>
+            <div class="dropdown">
+                <a href=cluster_diseases.html>Clustering diseases</a>
+                <div class="dropdown-content">
+                    <a href="cluster_diseases.html#cluster_diseases_overview">Overview of approach</a>
+                    <a href="cluster_diseases.html#disease_embeddings">Disease embedding methods</a>
+                    <a href="cluster_diseases.html#disease_clustering">Disease clustering methods</a>
+                    <a href="cluster_diseases.html#disease_cluster_assignments">Disease cluster assignments</a>
+                    <a href="cluster_diseases.html#evaluation">Evaluation strategy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href=cluster_people.html>Clustering people</a>
+                <div class="dropdown-content">
+                    <a href="cluster_people.html#cluster_people_overview">Overview of approach</a>
+                    <a href="cluster_people.html#nlp_comparison">Representation methods</a>
+                    <a href="cluster_people.html#ehrbert">EHR-BERT</a>
+                    <a href="cluster_people.html#in_progress">Work in progress</a>
+                </div>
+            </div>
 
-	<p>
-		Supervisors: Professor Paul Aylin, Professor Mauricio Barahona, Professor Azeem Majeed, Dr Tom Woodcock, Dr Jonathan Clarke
-	</p>
-	<p>
-		This work is funded by the Wellcome Trust 4i programme at Imperial College London.
-	</p>
+            <div class="dropdown">
+                <a href=publications.html>Publications</a>
+            </div>
+        </h3>
+    </header>
 
-	<section id="background">
-		<h2>Background</h2>
-		<p>
-			Multimorbidity, or the presence of multiple long-term conditions in one person is a growing priority for health systems across the world.
-			Healthcare has traditionally been designed around the referral and treatment of single diseases, meaning that people with more than one disease often need to see multiple specialists who may have conflicting priorities regarding a person's management.
-			There is a growing interest in defining groups of similar diseases or people with similar diseases, often referred to as 'clusters', with the hope that these might help identify shared causes between diseases, and shared opportunities for prevention and treatment.
-		</p>
+    <p style="text-align:center; padding-top:2%;margin:0px;"><img src="images/MEDCODE_CLUSTERS.jpg" alt="Disease clusters" style="width:400px;" /></p>
 
-		<p>
-			In my PhD, I aim firstly to develop clusters of both diseases and people based on patterns of diseases co-occurrence in a person.
-			Secondly, I aim to explore the relationship between clusters of people with health outcomes (such as mortality) and healthcare utilisation (for example, whether a person is admitted to hospital).
-			Disease clusters can help us to identify similarity between diseases, which can aid in understanding shared mechanisms of disease development.
-			However, disease clusters are limited in terms of understanding relationships with outcomes and with healthcare use, and for this reason, I develop and focus on clusters of people.
-		</p>
+    <section id="intro">
+        <h2>Welcome</h2>
+        <p>
+            This site provides an overview of my PhD research into clustering Multiple Long-Term Conditions (MLTC).
+            Here, you will also find resources, including clinical code lists, analysis code and results.
+        </p>
+    </section>
 
-		<p>
-			To determine the similarity between diseases and people, I focus on methods developed in natural language processing (NLP).
-			These methods are designed for the analysis of sequences of words and can handle large datasets.
-			In my PhD, I apply the same methods to sequences of diagnostic medical codes in the electronic healthcare record in general practice in England.
-		</p>
+    <section id="aims">
+        <h2>Research aims</h2>
+        <p>
+            My research aims to develop methods and understand applications of clustering both diseases and people, in the context of MLTC.
+            I do this applied to a large dataset of over 10 million primary and secondary care electronic health records (EHRs) representative of the population in England.
+            I combine methods from statistics and epidemiology with natural language processing, developing algorithms capable of accounting for the sequence of a person's diseases over time.
+            My research aims are to:
+            <ul>
+                <li><b>Aim 1:</b> Understand the limitations of using EHR data for research into MLTC and disease sequences.</li>
+                <li><b>Aim 2:</b> Generate clusters of diseases, comparing algorithms using disease co-occurrence versus sequence.</li>
+                <li><b>Aim 3:</b> Generate clusters of people with similar patterns of diseases.</li>
+                <li><b>Aim 4:</b> Explore how clusters can inform clinical outcomes and service design.</li>
+            </ul>
 
-	</section>
+        </p>
+    </section>
 
+    <section id="about_me">
+        <h2>About me</h2>
+        <p>
+            I work as a GP in London and a clinical researcher at Imperial College London.
+            This research formed my PhD thesis, which was awarded in November 2024.
+            You can find more information on my <a href="https://tbeaney.github.io/index.html">personal webpage</a>.
+        </p>
+    </section>
 
-	<section id="inprogress">
-		<h2>Work in progress</h2>
-		<h3>Developing code lists</h3>
-		<p>
-			Most previous research on multimorbidity clusters have focussed on a small number of diseases (usually less than 20), which might miss relationships between diseases that are less common
-			(see <a href="https://link.springer.com/article/10.1007/s10654-019-00568-5" )>Busija <i>et al</i> (2019)</a>).
-			In my research, I aim to use a more data-driven methods including all diagnostic codes indicating a disease/disorder to be included.
-			However, there are tens of thousands of distinct disease codes, and in order to assess the interpretability of the codes, categorisation of codes is required.
-			Others have used disease taxonomies or hierarchies, for example, chapters in the ICD-10 hierarchy of diseases.
-			However, hierarchies such as ICD-10 are mostly 'systems' categorisations, for example the 'respiratory system', and so may link based on anatomical proximity (such as asthma and lung fibrosis), rather than aetiology.
-		</p>
-		<p>
-			For my PhD, I use a set of 212 diseases defined previously in the literature.
-			The original set of diseases were defined by Kuan and colleagues for the <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(19)30012-3/fulltext"> CALIBER study</a>,
-			and available from the <a href="https://phenotypes.healthdatagateway.org"> HDRUK Phenotype Library </a>.
-			Of the original 308 conditions, Head and colleagues selected 211 conditions relevant to multimorbidity for a <a href="https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(21)00146-X/fulltext"> study of multimorbidity incidence and prevalence</a>,
-			with the code lists available on <a href="https://github.com/annalhead/CPRD_multimorbidity_codelists">GitHub</a>.
-			These codes lists have been developed specifically for use in the <a href="https://cprd.com/primary-care-data-public-health-research">CPRD Aurum</a> dataset used in this study.
-		</p>
+    <section id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p>
+            My research was funded through a clinical PhD fellowship from the Wellcome Trust 4i programme at Imperial College London.
+            Thanks to my supervisors Professor Paul Aylin, Professor Mauricio Barahona, Professor Azeem Majeed, Dr Tom Woodcock, Dr Jonathan Clarke.
+            The work was also supported by a Patient and Public Advisory Group including three people with lived experience of having, or caring for a person with MLTC.
+        </p>
+    </section>
 
-		<p>
-			I reviewed the codes in the original lists from Head and colleagues and made some edits to the codes.
-			I also created a new category of 'Chronic Primary Pain', as a common condition in primary care, and one that is frequently included in studies of multimorbidity, but not included in the original CALIBER code lists.
-			Where conditions were included in another category, these were removed, for example Fibromyalgia was originally included in 'Chronic Fatigue Syndrome', and was removed from this category.
-			There were also changes to the codes included for diabetes, with removal of codes indicating a specific Type 1 or Type 2 diagnosis from the 'Other/unspecified' diabetes category.
-			The full list of codes are available via the link below. The disease, disease number, system and system number are recorded as in the Head code lists.
-			The 'medcodeid' variable represents the unique code identifier available in CPRD.
-			The 'istest' category represents codes which have an assigned a value.
-			In these cases, whether a condition is incldued depends on the treshold value being met.
-		</p>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For further information, or if you want to discuss any aspect of the work, please get in touch:</p>
 
-		<p>
-			Link to download: <a href="resources/MEDCODE_DISEASE_LIST.csv" download="MEDCODE_DISEASE_LIST.csv">MEDCODE_DISEASE_LIST.csv</a>
-		</p>
+        <p> Email: <a href="mailto:thomas.beaney@imperial.ac.uk">thomas.beaney@imperial.ac.uk</a></p>
+        <p style="text-align:center; margin: 0px;padding-bottom: 2%">
+    </section>
 
-		<p>
-			If importing the csv into software such as Microsoft Excel, be sure to import as text to avoid rounding of the Medcode IDs.
-		</p>
-
-		<p>
-			Code lists have also been created to categorise staff types in the CPRD Aurum dataset. The link below downloads a csv file containing the 'jobcatid' assigned to each staff member. These have been categorised into GP, nurse, clinical_other (e.g. healthcare assistants), admin or other.
-		</p>
-		<p>
-			Link to download job category assignment: <a href="resources/STAFF_TYPES_CATEGORIES_SHARE.csv" download="STAFF_TYPES_CATEGORIES_SHARE.csv">STAFF_TYPES_CATEGORIES.csv</a>
-		</p>
-
-
-		<h3>Developing list of clinically established disease associations</h3>
-		<p>
-			In order to evaliuate the interpretability of disease clusters, we developed a set of 253 established disease association pairs.
-			The aim here is to provide a list of conditions which are clinically well-established to be associated with each other, but is not an attempt to provide a comprehensive list of all possible associations.
-			To create this list, I considered all 212 diseases, and used sources including the <a href="https://bestpractice.bmj.com/info/">BMJ Best Practice guidelines</a> to create a set of known disease associations for each disease, incorporating both known risk factors and known complications for a given disease.
-			The set of disease pairs were reviewed by two co-authors with clinical backgrounds and any disagreements were discussed.
-			A total of 144 conditions were included with at least one association to another disease.
-			The list is available to download via the link below.
-			Note that each pair appears twice, and depending on your purpose, you may wish to de-duplicate each pair of associations.
-		</p>
-
-		<p>
-			Link to download:
-			<a href="resources/DISEASE_ASSOCIATION_PAIRS.csv" download="DISEASE_ASSOCIATION_PAIRS.csv">DISEASE_ASSOCIATION_PAIRS.csv</a>
-		</p>
-
-
-		<h3>Visualising disease embeddings</h3>
-		<p>
-			Dimensionality reduction techniques were first used to visualise relationships between diseases.
-			Multiple Correspondence Analysis (MCA) was used to create a vector representation of each disease, trialling retention of different numbers of dimensions.
-			The link below shows an interactive plot of diseases for the first two dimensions retained using MCA.
-			More similar diseases appear closer together on each dimension.
-			Also overlaid on the plot are patient age category and the number of long-term conditions (LTCs).
-			As can be seen, age and number of LTCs are strongly represented on the first dimension.
-			Conditions common in younger people tend to separate from those more common in older people along dimension 1.
-			Chronic liver conditions separate strongly on dimension 2.
-		</p>
-
-		<p>
-			<a href="mca_fig.html">Interactive plot of the first two dimensions from MCA</a>
-		</p>
-
-		<h3>Defining clusters of diseases</h3>
-		<p>
-			Disease clusters were created using a three-step process.
-			First, vector representations ("disease embeddings") were created using a) MCA and b) NLP methods (comparing <i>Word2vec</i> and <i>GloVe</i>).
-			Second, similarity of each disease to each other disease was determined by calculating the cosine similarity, creating a 212 by 212 matrix.
-			Of co-occurrence methods, we found MCA with 30 dimensions to perform best and of the NLP methods, we found skip-gram using multiple codes (SGM) to perform best. The MCA and SGM embeddings are available to download here:
-		<p>
-			Download:
-			<a href="resources/MCA.csv" download="MCA.csv">MCA embeddings</a>
-		</p>
-		<p>
-			Download:
-			<a href="resources/SGM.csv" download="SGM.csv">SGM embeddings</a>
-		</p>
-		Third, diseases were clustered based on their cosine similarity.
-		We adopted a graph-based clustering algorithm, Markov Multiscale Community Detection (MMCD), with a Python implementation available on <a href="https://github.com/barahona-research-group/PyGenStability">GitHub</a>.
-		This method identifies optimal clusters at different resolutions, and we compare the resulting clusters at a fine, medium and coarse resolution. Our analysis pipeline is available in a Jupyter notebook below,
-		which runs in Python version 3.8.10 and uses the MCA or SG-M embeddings.
-		</p>
-
-		<p>
-			Download jupyter notebook:
-			<a href="resources/MMCD pipeline.ipynb" target="_blank">MMCD pipeline</a>
-		</p>
-
-		<p>
-			Finally, we created word cloud representations of the disease assignments to clusters, available for clusters derived from both MCA and SGM embeddings below:
-
-		<p>
-			<a href="mca_clusters.html">MCA clusters</a>
-		</p>
-		<p>
-			<a href="nlp_clusters.html">SGM clusters</a>
-
-		</p>
-		<p>Further details on our approach to identifying disease clusters can be found in our <a href="https://www.medrxiv.org/content/10.1101/2023.06.30.23292080v1"> pre-print on medRxiv</a>.</p>
-
-	</section>
-
-	<section id="ehrbert">
-		<h2>EHR-BERT</h2>
-		<p>
-			To create direct representations of people, rather than diseases, based on their disease sequences, we created a transformer architecture inspired by BERT, and extending on the
-			<a href="https://github.com/deepmedicine/BEHRT/blob/master/preprocess/behrtFormat.py">BEHRT model</a>. Further information is given in our <a href="https://www.medrxiv.org/content/10.1101/2023.11.16.23298640v1" )>
-				pre-print on medRxiv
-			</a>.
-
-			Codes relating to EHR-BERT are available to download here. The folder includes a python notebook, along with a dummy data set (in .pkl format), which runs in Python version 3.10.9.
-		</p>
-		<p>
-			Download EHR-BERT files:
-			<a href="resources/EHRBERT.zip" target="_blank">EHR-BERT folder</a>
-		</p>
-
-	</section>
+    <footer style=" text-align: center; background-color: #f1f1f1;">
+        <p style="padding-top: 2%; padding-bottom: 2%;">Author: Thomas Beaney, November 2024.</p>
+    </footer>
 
 </body>
 </html>

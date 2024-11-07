@@ -1,0 +1,213 @@
+med_dis,25,15,7,5,LABEL_25,LABEL_15,LABEL_7
+Atrial Fibrillation,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Heart failure,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Nonrheumatic aortic valve disorders,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Supraventricular tachycardia,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Nonrheumatic mitral valve disorders,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Cardiomyopathy_other,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Right bundle branch block combinations,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Left bundle branch block,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Dilated cardiomyopathy,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Hypertrophic Cardiomyopathy,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Atrioventricular blocks,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Ventricular tachycardia,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Rheumatic Valve Disorder,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Primary pulmonary hypertension,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Multiple valve disorder,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Pericardial Effusion,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Secondary pulmonary hypertension,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Sick sinus syndrome,0,1,2,2,"Cardiac: arrhythmia, HF and valve","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Primary Malignancy_Bowel,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_other,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Primary Malignancy_other,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Liver,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Primary Malignancy_Bone,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Brain,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Bone,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Lung,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Lymph Nodes,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Peritoneum,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Adrenal Gland,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Bowel,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Secondary Malignancy_Pleura,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Primary Malignancy_Multiple Sites,1,0,3,3,Secondary malignancies,Malignancies,Malignancies
+Non-Hodgkin Lymphoma,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Secondary Thrombocytopaenia,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Hyposplenism,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Primary Thrombocytopaenia,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Hodgkin Lymphoma,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Sickle Cell Disease,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Other haemolytic anaemias,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Myelodysplastic Syndrome,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Hypersplenism,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Aplastic anaemias,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Thalassaemia,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+Immunodeficiencies,2,2,4,4,Haematological,Haematological and autoimmune,"Alcohol, liver and haematological"
+COPD,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Coronary Heart Disease (not otherwise specified),3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Abdominal Hernia,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Stable Angina,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Myocardial Infarction,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Benign Prostatic Hyperplasia,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Peripheral Vascular Disease,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Unstable Angina,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Abdominal Aortic Aneurysm,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Pleural plaque,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Asbestosis,3,7,2,2,Respiratory and vascular,Respiratory and vascular,Cardiac and respiratory
+Depression,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Anxiety disorders,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Substance Misuse,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Schizophrenia,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Bipolar affective disorder and mania,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Personality disorders,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Obsessive-compulsive disorder,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Hyperkinetic disorders,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Eating Disorders,4,6,1,1,Mental health,MH and LD,"MH, LD, allergic, skin and gynaecological"
+Chronic viral hepatitis,4,12,4,4,Mental health,Alcohol and liver,"Alcohol, liver and haematological"
+Venous thromboembolic disease (Excl PE),4,11,5,1,Mental health,Autoimmune and coagulopathy,Autoimmune
+Osteoarthritis (excl spine),5,4,0,0,Bone and rheumatological,Lipid and MSK,"Metabolic, neurological and MSK"
+Spondylosis,5,4,0,0,Bone and rheumatological,Lipid and MSK,"Metabolic, neurological and MSK"
+Intervertebral disc disorders,5,4,0,0,Bone and rheumatological,Lipid and MSK,"Metabolic, neurological and MSK"
+Polymyalgia Rheumatica,5,4,0,0,Bone and rheumatological,Lipid and MSK,"Metabolic, neurological and MSK"
+Parkinson's disease,5,4,0,0,Bone and rheumatological,Lipid and MSK,"Metabolic, neurological and MSK"
+Spinal stenosis,5,4,0,0,Bone and rheumatological,Lipid and MSK,"Metabolic, neurological and MSK"
+Spondylolisthesis,5,4,0,0,Bone and rheumatological,Lipid and MSK,"Metabolic, neurological and MSK"
+Osteoporosis,5,5,0,0,Bone and rheumatological,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Giant Cell arteritis,5,5,0,0,Bone and rheumatological,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Collapsed vertebra,5,5,0,0,Bone and rheumatological,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Psoriasis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Ulcerative colitis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Crohn's disease,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Psoriatic Arthritis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Anterior and Intermediate Uveitis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Ankylosing spondylitis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Sarcoidosis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Scleritis and episcleritis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Posterior Uveitis,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Enteropathic arthropathy,6,13,5,1,Autoimmune: HLA-B27 linked,Autoimmune: HLA-B27 linked,Autoimmune
+Obesity,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Diabetes Mellitus_other or not specified,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Type 2 Diabetes Mellitus,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Raised Triglycerides,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Low HDL-C,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Diabetic Eye Disease,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Type 1 Diabetes Mellitus,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Peripheral Neuropathy,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Diabetic Neuropathy,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Autonomic Neuropathy,7,8,0,0,Metabolic,Metabolic,"Metabolic, neurological and MSK"
+Raised Total Cholesterol,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Raised LDL-C,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Enthesopathy and synovial disorder,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Hearing loss,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Primary Malignancy_Skin,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Tinnitus,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Fibromatosis,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Meniere's Disease,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Benign essential tremor,8,4,0,0,"Lipid, skin and hearing",Lipid and MSK,"Metabolic, neurological and MSK"
+Rosacea,8,4,5,1,"Lipid, skin and hearing",Lipid and MSK,Autoimmune
+Alcohol Misuse,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Pancreatitis,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Fatty Liver,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Cirrhosis,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Alcoholic liver disease,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Autoimmune liver disease,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Oesophageal varices,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Primary Malignancy_Liver,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Portal hypertension,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Hepatic failure,9,12,4,4,Alcohol and liver,Alcohol and liver,"Alcohol, liver and haematological"
+Pleural effusion,10,1,2,2,"Primary malignancies: lung, upper GI and kidney","Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Primary Malignancy_Lung,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Primary Malignancy_Oropharyngeal,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Primary Malignancy_Oesophageal,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Primary Malignancy_Kidney,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Primary Malignancy_Pancreas,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Primary Malignancy_Stomach,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Primary Malignancy_Biliary Tract,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Primary Malignancy_Mesothelioma,10,0,3,3,"Primary malignancies: lung, upper GI and kidney",Malignancies,Malignancies
+Asthma,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Dermatitis,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Allergic and chronic rhinitis,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Acne,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Chronic sinusitis,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Seborrheic dermatitis,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Alopecia areata,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Vitiligo,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Hypertrophic Nasal Turbinates,11,3,1,1,Allergic and skin,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Migraine,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Irritable bowel syndrome,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Chronic Fatigue Syndrome,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Dysmenorrhoea,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Chronic primary pain,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Endometriosis,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Polycystic ovarian syndrome,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Hidradenitis suppurativa,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Idiopathic Intracranial Hypertension,12,3,1,1,Pain and gynaecological,"Allergic, skin and pain","MH, LD, allergic, skin and gynaecological"
+Epilepsy,13,6,1,1,"Thyroid, brain and LD",MH and LD,"MH, LD, allergic, skin and gynaecological"
+Intellectual disability,13,6,1,1,"Thyroid, brain and LD",MH and LD,"MH, LD, allergic, skin and gynaecological"
+Autism and Asperger's syndrome,13,6,1,1,"Thyroid, brain and LD",MH and LD,"MH, LD, allergic, skin and gynaecological"
+Cerebral Palsy,13,6,1,1,"Thyroid, brain and LD",MH and LD,"MH, LD, allergic, skin and gynaecological"
+Down's syndrome,13,6,1,1,"Thyroid, brain and LD",MH and LD,"MH, LD, allergic, skin and gynaecological"
+Thyroid Disease,13,14,1,1,"Thyroid, brain and LD",Thyroid and other malignancies,"MH, LD, allergic, skin and gynaecological"
+Primary Malignancy_Brain,13,14,3,3,"Thyroid, brain and LD",Thyroid and other malignancies,Malignancies
+Primary Malignancy_Thyroid,13,14,3,3,"Thyroid, brain and LD",Thyroid and other malignancies,Malignancies
+Primary Malignancy_Breast,14,9,3,3,Female malignancies,"Urinary, neuropathy and female malignancies",Malignancies
+Primary Malignancy_Ovary,14,9,3,3,Female malignancies,"Urinary, neuropathy and female malignancies",Malignancies
+Primary Malignancy_Uterus,14,9,3,3,Female malignancies,"Urinary, neuropathy and female malignancies",Malignancies
+Primary Malignancy_Cervix,14,9,3,3,Female malignancies,"Urinary, neuropathy and female malignancies",Malignancies
+Endometrial hyperplasia and hypertrophy,14,9,3,3,Female malignancies,"Urinary, neuropathy and female malignancies",Malignancies
+Primary Malignancy_Melanoma,14,14,3,3,Female malignancies,Thyroid and other malignancies,Malignancies
+Primary Malignancy_Testis,14,14,3,3,Female malignancies,Thyroid and other malignancies,Malignancies
+Urinary Incontinence,15,9,6,0,Urinary and neuropathy ,"Urinary, neuropathy and female malignancies","GI, urinary and neuropathy"
+Multiple sclerosis,15,9,6,0,Urinary and neuropathy ,"Urinary, neuropathy and female malignancies","GI, urinary and neuropathy"
+Neuropathic Bladder,15,9,6,0,Urinary and neuropathy ,"Urinary, neuropathy and female malignancies","GI, urinary and neuropathy"
+Trigeminal neuralgia,15,9,6,0,Urinary and neuropathy ,"Urinary, neuropathy and female malignancies","GI, urinary and neuropathy"
+Obstructive and reflux uropathy,15,9,6,0,Urinary and neuropathy ,"Urinary, neuropathy and female malignancies","GI, urinary and neuropathy"
+Chronic Cystitis,15,9,6,0,Urinary and neuropathy ,"Urinary, neuropathy and female malignancies","GI, urinary and neuropathy"
+Spina bifida,15,9,6,1,Urinary and neuropathy ,"Urinary, neuropathy and female malignancies","GI, urinary and neuropathy"
+Pulmonary Fibrosis,16,11,2,2,Autoimmune,Autoimmune and coagulopathy,Cardiac and respiratory
+Rheumatoid Arthritis,16,11,5,1,Autoimmune,Autoimmune and coagulopathy,Autoimmune
+Raynaud's syndrome,16,11,5,1,Autoimmune,Autoimmune and coagulopathy,Autoimmune
+Lupus Erythematosus,16,11,5,1,Autoimmune,Autoimmune and coagulopathy,Autoimmune
+Thrombophilia,16,11,5,1,Autoimmune,Autoimmune and coagulopathy,Autoimmune
+Sjogren's Syndrome,16,11,5,1,Autoimmune,Autoimmune and coagulopathy,Autoimmune
+Scleroderma,16,11,5,1,Autoimmune,Autoimmune and coagulopathy,Autoimmune
+Stroke_not otherwise specified,17,5,0,0,Stroke,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Transient ischaemic attack,17,5,0,0,Stroke,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Ischaemic stroke,17,5,0,0,Stroke,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Subarachnoid haemorrhage,17,5,0,0,Stroke,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Intracerebral haemorrhage,17,5,0,0,Stroke,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Polycythaemia vera,17,5,0,0,Stroke,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+HIV,17,2,4,4,Stroke,Haematological and autoimmune,"Alcohol, liver and haematological"
+Hypertension,18,8,0,0,Hypertension and renal,Metabolic,"Metabolic, neurological and MSK"
+Chronic Kidney Disease,18,8,0,0,Hypertension and renal,Metabolic,"Metabolic, neurological and MSK"
+Gout,18,8,0,0,Hypertension and renal,Metabolic,"Metabolic, neurological and MSK"
+Hyperparathyroidism,18,11,0,0,Hypertension and renal,Autoimmune and coagulopathy,"Metabolic, neurological and MSK"
+Glomerulonephritis,18,11,5,0,Hypertension and renal,Autoimmune and coagulopathy,Autoimmune
+Tubulo-interstitial nephritis,18,11,5,0,Hypertension and renal,Autoimmune and coagulopathy,Autoimmune
+Gastro-oesophageal reflux disease,19,10,6,0,Gastrointestinal,GI and anaemias,"GI, urinary and neuropathy"
+Diverticular Disease,19,10,6,0,Gastrointestinal,GI and anaemias,"GI, urinary and neuropathy"
+Gastritis and duodenitis,19,10,6,0,Gastrointestinal,GI and anaemias,"GI, urinary and neuropathy"
+Diaphragmatic hernia,19,10,6,0,Gastrointestinal,GI and anaemias,"GI, urinary and neuropathy"
+Barrett's oesophagus,19,10,6,0,Gastrointestinal,GI and anaemias,"GI, urinary and neuropathy"
+Angiodysplasia of colon,19,10,6,0,Gastrointestinal,GI and anaemias,"GI, urinary and neuropathy"
+Cystic Fibrosis,20,6,1,1,"Mixed haematological, respiratory and neurological",MH and LD,"MH, LD, allergic, skin and gynaecological"
+Bronchiectasis,20,2,4,4,"Mixed haematological, respiratory and neurological",Haematological and autoimmune,"Alcohol, liver and haematological"
+Leukaemia,20,2,4,4,"Mixed haematological, respiratory and neurological",Haematological and autoimmune,"Alcohol, liver and haematological"
+Plasma Cell Malignancy,20,2,4,4,"Mixed haematological, respiratory and neurological",Haematological and autoimmune,"Alcohol, liver and haematological"
+Myasthenia gravis,20,2,4,4,"Mixed haematological, respiratory and neurological",Haematological and autoimmune,"Alcohol, liver and haematological"
+Motor neurone disease,20,2,4,4,"Mixed haematological, respiratory and neurological",Haematological and autoimmune,"Alcohol, liver and haematological"
+Cataract,21,5,0,0,Cognitive and visual impairment,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Dementia,21,5,0,0,Cognitive and visual impairment,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Glaucoma,21,5,0,0,Cognitive and visual impairment,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Macular degeneration,21,5,0,0,Cognitive and visual impairment,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Visual impairment and blindness,21,5,0,0,Cognitive and visual impairment,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Retinal vascular occlusions,21,5,0,0,Cognitive and visual impairment,"Visual, cognitive and bone ","Metabolic, neurological and MSK"
+Vitamin B12 deficiency anaemia,22,10,6,0,Anaemias and Coeliac,GI and anaemias,"GI, urinary and neuropathy"
+Anaemia_other,22,10,6,0,Anaemias and Coeliac,GI and anaemias,"GI, urinary and neuropathy"
+Coeliac disease,22,10,6,0,Anaemias and Coeliac,GI and anaemias,"GI, urinary and neuropathy"
+Folate deficiency anaemia,22,10,6,0,Anaemias and Coeliac,GI and anaemias,"GI, urinary and neuropathy"
+Sleep apnoea,23,7,1,1,Sleep apnoea and congenital septal defect,Respiratory and vascular,"MH, LD, allergic, skin and gynaecological"
+Congenital Septal Defect,23,1,2,2,Sleep apnoea and congenital septal defect,"Cardiac: arrhythmia, HF and valve",Cardiac and respiratory
+Secondary polycythaemia,23,7,2,2,Sleep apnoea and congenital septal defect,Respiratory and vascular,Cardiac and respiratory
+Primary Malignancy_Prostate,24,0,3,3,Urological malignancy,Malignancies,Malignancies
+Primary Malignancy_Bladder,24,10,6,0,Urological malignancy,GI and anaemias,"GI, urinary and neuropathy"

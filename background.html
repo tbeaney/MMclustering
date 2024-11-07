@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Background</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="v1-stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+        .dropdown > a {
+            color: black !important;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            color: black !important;
+            font-size: 14px;
+            text-align: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+
+    /* Show the dropdown on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body class='markdown-preview' data-use-github-style style="max-width: 1000px;margin: auto;">
+    <header style="border-top: 1.5px solid #4CAF50; border-bottom: 1.5px solid #4CAF50;">
+        <h1 style="text-align: center; font-size: 40px; margin: 0px; padding-top: 2%; color: black; background-color: white;">
+            Clustering Multiple Long-Term Conditions
+        </h1>
+        <h3 style="text-align: center; margin: 0px; padding-bottom: 2%; padding-top: 1%; background-color: white; ">
+            <div class="dropdown">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="dropdown">
+                <a href="background.html">Background</a>
+                <div class="dropdown-content">
+                    <a href="background.html#mltc">What is MLTC?</a>
+                    <a href="background.html#clusters">Why cluster?</a>
+                    <a href="background.html#classification">Classification versus clustering</a>
+                    <a href="background.html#sequences">Co-occurrence versus sequences</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href=ehr_data.html>Using EHR data</a>
+                <div class="dropdown-content">
+                    <a href="ehr_data.html#data_sources">Data sources</a>
+                    <a href="ehr_data.html#mltc_codes">MLTC code lists</a>
+                    <a href="ehr_data.html#chronicity">When is a disease chronic?</a>
+                    <a href="ehr_data.html#code_frequency">Code frequency in EHRs</a>
+                    <a href="ehr_data.html#other_codes">Other code lists</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href=cluster_diseases.html>Clustering diseases</a>
+                <div class="dropdown-content">
+                    <a href="cluster_diseases.html#cluster_diseases_overview">Overview of approach</a>
+                    <a href="cluster_diseases.html#disease_embeddings">Disease embedding methods</a>
+                    <a href="cluster_diseases.html#disease_clustering">Disease clustering methods</a>
+                    <a href="cluster_diseases.html#disease_cluster_assignments">Disease cluster assignments</a>
+                    <a href="cluster_diseases.html#evaluation">Evaluation strategy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href=cluster_people.html>Clustering people</a>
+                <div class="dropdown-content">
+                    <a href="cluster_people.html#cluster_people_overview">Overview of approach</a>
+                    <a href="cluster_people.html#nlp_comparison">Representation methods</a>
+                    <a href="cluster_people.html#ehrbert">EHR-BERT</a>
+                    <a href="cluster_people.html#in_progress">Work in progress</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href=publications.html>Publications</a>
+            </div>
+        </h3>
+    </header>
+
+    <section id="background">
+        <h1 style="font-size: 30px; padding-bottom: 3%; border-bottom: 1.5px solid #4CAF50; ">Background and rationale</h1>
+    </section>
+
+    <section id="mltc">
+        <h2>What is MLTC?</h2>
+        <p>
+            Multiple Long-Term Conditions (MLTC) is usually defined as the co-existence (or <i>co-occurrence</i>) of two or more long-term conditions (LTCs) in one person. It has traditionally been called <i>multimorbidity</i>,
+            a term which I avoid as unnecessary medical jargon which is less clear to patients, and has <a href=https://pubmed.ncbi.nlm.nih.gov/37832952/">negative connotations</a>.
+        </p>
+        <p>
+            Worldwide, more people are living with MLTC, partly because of people living to older ages and partly because of increased rates of many LTCs.
+            Health systems tend to be designed around the care of single diseases, which means that people with MLTC often have to see multiple healthcare specialists, and their care can become
+            "fragmented", creating difficulties in accessing care, inefficiencies and leading to poor health outcomes.
+        </p>
+    </section>
+
+    <section id="clusters">
+        <h2>Why cluster?</h2>
+        <p>
+            One of the biggest challenges in addressing MLTC is that it is a crude marker - there exists huge variety among people who have it.
+            For example, the health and care needs of a person with arthritis and thyroid disease might be very different to a person with a previous heart attack and stroke.
+            This makes it difficult to identify and design strategies to help those with MLTC.
+            If instead, we could find patterns of diseases that often occur together, then we might be able to provide tailored care specific to each pattern.
+        </p>
+
+        <p>
+            To better understand this complexity, as a starting point, we might try to identify and explain every possible pattern of diseases that occurs in a population.
+            However, as Stokes and colleagues found in a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003514">2021 study</a>,
+            there were over 63,000 unique combination of 28 conditions from a population of 8 million people - clearly far beyond human comprehension!
+            Clustering can be viewed as a middle-ground, giving us meaningful insights from a smaller and intepretable number of groups.
+        </p>
+
+        <p>
+            Clustering is a data-driven method of grouping together similar data.
+            Applied to diseases, this means grouping together diseases that are similar, and in the case of people, grouping together people who are similar.
+            There are of course many attributes we could pick to decide whether two diseases or people are 'similar', but from the perspective of MLTC, our interest is in diseases that co-exist.
+            So two diseases will be similar if they commonly co-exist together in one person and dissimilar if they are rarely seen together.
+            By extension, two people will be similar if they share similar diseases.
+            As applied to this research, the clusters I aim to create are <i>unsupervised</i>, i.e., determined based on information on the diseases alone,
+            without training algorithms to fit to already known patterns.
+            The purpose of doing this in an unsupervised way is to help identify patterns that we don't alreaady know.
+        </p>
+        <p>
+            The challenge is in how to evaluate whether the clusters are 'good', in the absence of knowledge of what they should be
+            (we give more detail of <a href="cluster_diseases.html#evaluation">our approach here</a>).
+        </p>
+
+        <p>
+            Generating clusters requires a two-step process:
+            <ol>
+                <li>Create a measure of similarity for each disease or person.</li>
+                <li>Run a clustering algorithm using the similarity measures.</li>
+            </ol>
+        </p>
+    </section>
+
+    <section id="classification">
+        <h2>Classification versus clustering</h2>
+        <p>
+            Throughout history, doctors have attempted to make sense of diseases by classifying them into usable groups.
+            One of the most widely used classifications today is the <a href="https://icd.who.int/en" )>International Classification of Diseases</a>.
+            Existing classifications tend to group diseases based on the body system they affect.
+            For example, asthma and pulmonary fibrosis are both in the chapter of 'Diseases of the Respiratory System' and eczema is found under 'Diseases of the skin'.
+            In contrast, when clustering conditions that co-occur, we might expect asthma and eczema to both be in the same cluster, as they frequently co-exist.
+            So clustering diseases based on their <i>co-occurrence</i> is different to the traditional anatomical classifications we have used.
+        </p>
+
+    </section>
+
+    <section id="sequences">
+        <h2>Co-occurrence versus sequence</h2>
+        <p>
+            Consider two people with the same two diseases, but developed in a different order over time:
+        </p>
+        <p style="text-align: center; padding-top: 1%; padding-bottom: 2%; margin:0px;"><img src="images/sequence.pdf" alt="Co-occurrence versus sequence" style="width:800px;" /></p>
+
+        <p>
+            Intutively, we would expect that the order might be relevant both to the causes of their conditions, how they interact with health services, and to what happens next
+            (such as developing another disease).
+            So, one of the premises of this work is that finding ways to incorporate and handle the order of the diseases may help understand the complexity of MLTC.
+        </p>
+
+        <p>
+            Methods developed for natural language are well-suited to this purpose.
+            In language, the order of words is important, and natural language processing (NLP) algorithms are designed to learn patterns in the order of words or documents.
+            In this work, I interpret the order of words in a document as analogues to the order of diseases in a person, and adopt similar methods, translated to healthcare data.
+        </p>
+    </section>
+
+    <footer style=" text-align: center; background-color: #f1f1f1;">
+        <p style="padding-top: 2%; padding-bottom: 2%;">Author: Thomas Beaney, November 2024.</p>
+    </footer>
+
+</body>
+</html>
